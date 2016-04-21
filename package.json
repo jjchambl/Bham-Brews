@@ -26,7 +26,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "less": "lessc css/style.less css/style.css",
     "start": "concurrently \"npm run watch\" \"npm run server\"",
-    "watch": "nodemon -q -e js,less,css,html --exec npm run less",
+    "watch": "nodemon -q -e less --exec npm run less",
     "server": "./node_modules/.bin/http-server -a localhost -p 3000"
   }
 }
