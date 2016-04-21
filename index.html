@@ -3,6 +3,8 @@
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
     </head>
     <header>
           <!--NAVBAR-->
@@ -35,15 +37,21 @@
 
     </header>
     <body>
-        <div ng-view>
+        <div class="container">
             
         </div>
+        <div ng-view></div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
         <script src="bower_components/angular-route/angular-route.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/controllers.js"></script>       
+        <script src="js/controllers/avondaleCtrl.js"></script>       
+        <script src="js/controllers/goodCtrl.js"></script>
+        <script src="js/controllers/cahabaCtrl.js"></script>
+        <script src="js/controllers/trimTabCtrl.js"></script>
+        <script src="js/controllers/mapCtrl.js"></script>
+        <script src="js/controllers/welcomeCtrl.js"></script>
     </body>
 </html>

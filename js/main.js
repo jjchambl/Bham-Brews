@@ -1,6 +1,6 @@
-var app = angular.module('brewApp', ['brewApp.controllers', 'ngRoute']);
+angular.module('brewApp', ['ngRoute'])
 
-app.config(['$routeProvider', function($routeProvider) {
+.config(['$routeProvider', function($routeProvider) {
     $routeProvider
     .when('/', {
         templateUrl: 'views/welcome.html',
@@ -21,5 +21,5 @@ app.config(['$routeProvider', function($routeProvider) {
     .when('/avondale', {
         templateUrl: 'views/avondale.html',
         controller: 'AvondaleCtrl'
-    })
-}])
+    });
+}]);
