@@ -1,3 +1,8 @@
-h1 {
-  color: red;
+.bhamHeadImg {
+  background-image: url('/Bham-pics/BirminghamALskyline_2_curtispalmer.jpg');
+  height: 25em;
+  max-width: 100%;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 2.5em;
 }
