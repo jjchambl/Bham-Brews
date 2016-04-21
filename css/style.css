@@ -6,3 +6,10 @@
   background-position-x: center;
   background-position-y: 2.5em;
 }
+.avondale {
+  background-image: url('/Brewery-pics/avondaleBackground.png');
+}
+.avondaleBrewImg {
+  margin: .5em;
+  max-width: 100%;
+}
