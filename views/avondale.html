@@ -1,32 +1,33 @@
 <div class="avondale">
     <div class="row">
         <div class="col-md-4"><img src="/Brewery-pics/avondaleLogo.png" alt="" class="avondaleBrewImg"></div>
-        <div class="col-md-6"><h2>Content and Social links and stuff here</h2></div>
-        <div class="col-md-2"><h3>Event Calender<h3></div>
+        <div class="col-md-5"><h2>Content and Social links and stuff here</h2></div>
+        <!--<div class="col-md-2"><h3>Event Calender<h3></div>-->
+        <div class=" col-md-3 mapContainer">
+            <div class="maps">
+                <ng-map center="33.5245,-86.7742" zoom="10">
+                    <marker position="33.5245,-86.7742" title="Avondale Brewery!"></marker>
+                    <directions
+                    draggable="true"
+                    panel="directions-panel"
+                    travel-mode="DRIVING"
+                    origin="current-location"
+                    destination="201 41st Street South Birmingham, AL 35222">
+                    </directions>
+                </ng-map>
+                <div id="directions-panel"></div>
+                Directions path length:
+                    {{map.directionsRenderers[0].directions.routes[0].overview_path.length}}
+            </div>     
+        </div>
     </div>
     <div class="row">
         <div class="col-md-5"><h2>Beer list here</h2></div>
         <div class="col-md-4"><h2>Untapped ratings here</h2></div>
-        <div class="col-md-3"><h2>Twitter feed here</h2></div>
+        <!--<div class="col-md-3"><h2>Twitter feed here</h2></div>-->
     </div>
 </div>
 
-<div class="mapContainer">
-    <div class="maps">
-        <ng-map center="33.5245,-86.7742" zoom="10">
-            <marker position="33.5245,-86.7742" title="Avondale Brewery!"></marker>
-            <directions
-            draggable="true"
-            panel="directions-panel"
-            travel-mode="DRIVING"
-            origin="current-location"
-            destination="201 41st Street South Birmingham, AL 35222">
-            </directions>
-        </ng-map>
-        Directions path length:
-            {{map.directionsRenderers[0].directions.routes[0].overview_path.length}}
-    </div>
-    <div id="directions-panel"></div>
-</div>
+
 
 
