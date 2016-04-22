@@ -1,1 +1,12 @@
 <h2>{{message}}</h2>
+
+<div class="mapContainer">
+    <ng-map center="41,-87" zoom="10">
+        <directions
+          draggable="true"
+          travel-mode="DRIVING"
+          origin="current-location"
+          destination="4500 5th Ave South Building C  Birmingham, Alabama 35222">
+        </directions>
+    </ng-map>
+</div>

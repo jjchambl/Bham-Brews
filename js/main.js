@@ -1,4 +1,4 @@
-angular.module('brewApp', ['ngRoute'])
+angular.module('brewApp', ['ngRoute', "ngMap"])
 
 .config(['$routeProvider', function($routeProvider) {
     $routeProvider
