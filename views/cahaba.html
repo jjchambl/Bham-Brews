@@ -1,12 +1,22 @@
 <h2>{{message}}</h2>
 
 <div class="mapContainer">
-    <ng-map center="41,-87" zoom="10">
-        <directions
-          draggable="true"
-          travel-mode="DRIVING"
-          origin="current-location"
-          destination="4500 5th Ave South Building C  Birmingham, Alabama 35222">
-        </directions>
-    </ng-map>
+    <div class="maps">
+        <ng-map center="33.5275183,-86.7654226" zoom="8">
+            <marker position="33.5275183,-86.7654226" title="Cahaba Brewery!"></marker>
+            <directions
+            draggable="true"
+            panel="directions-panel"
+            travel-mode="DRIVING"
+            origin="current-location"
+            destination="4500 5th Ave South Building C Birmingham, Alabama 35222">
+            </directions>
+        </ng-map>
+        Directions path length:
+            {{map.directionsRenderers[0].directions.routes[0].overview_path.length}}
+    </div>
+    <div id="directions-panel"></div>
 </div>
+
+
+

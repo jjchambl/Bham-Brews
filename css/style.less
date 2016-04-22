@@ -1,29 +1,25 @@
 @import "colors.less";
 @import "variables.less";
 
-html {
-    height:400px;
-}
-
-body {
-    height: 400px;
-}
-
-#gPMap {
-    height: 300px;
-    width: 300px;
-}
-
-#aBMap {
-    height: 300px;
-    width: 300px;
-}
-
-.mapContainer {
+// Maps
+.maps {
     margin-left: 60px;
     height: 300px;
     width: 300px;
+    display: inline-table;
 }
+
+.mapContainer {
+    display: inline-flex;
+}
+
+#directions-panel {
+    width: 28%; 
+    height: 100%; 
+    overflow: auto; 
+    padding: 0px 5px;
+}
+// End of Maps
 
 .bhamHeadImg {
     background-image: url('/Bham-pics/BirminghamALskyline_2_curtispalmer.jpg');
