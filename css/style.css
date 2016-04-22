@@ -1,11 +1,11 @@
 .maps {
-  margin-left: 60px;
+  margin-top: 1.10%;
   height: 300px;
   width: 300px;
-  display: inline-table;
 }
 .mapContainer {
   display: inline-flex;
+  align-content: right;
 }
 #directions-panel {
   width: 28%;
