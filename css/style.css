@@ -19,7 +19,6 @@ p {
   max-width: 100%;
   background-size: cover;
   background-position-x: center;
-  background-position-y: 2.5em;
 }
 .bhamHeadImg .page-header h1 {
   font-family: 'Goudy Bookletter 1911', serif;
@@ -30,20 +29,38 @@ p {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: gray;
 }
+.space {
+  height: 1em;
+  background-color: white;
+}
+.social {
+  background-color: white;
+}
+.social .calendar {
+  background-color: gray;
+  text-align: center;
+}
+.social .calendar .panel-heading {
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+.social .calendar p {
+  color: black;
+  padding: .5em 0;
+}
 .footer p {
   font-family: 'Times New Roman', Times, serif;
   font-size: .8em;
 }
 .carousel .carousel-inner {
-  height: 35em;
-}
-.carousel .carousel-inner .item {
-  height: 100%;
-  margin: 0 auto;
+  max-height: 35em;
 }
 .carousel .carousel-inner .item img {
-  height: 100%;
-  width: 75%;
+  max-height: 90%;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 .maps {
   height: 300px;
