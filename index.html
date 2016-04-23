@@ -6,32 +6,38 @@
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no" ">
         
     </head>
-    <header>
+    <!--<header>-->
           <!--NAVBAR-->
-    <div class="navbarBham navbar navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand text-muted" href="#/">Bham Brews</a>
-            <div class ="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="#"><a href="#/">Welcome</a></li>
-                    <li><a href="#goodppl">Good People</a></li>
-                    <li><a href="#avondale">Avondale</a></li>
-                    <li><a href="#trimtab">Trim Tab</a></li>
-                    <li><a href="#cahaba">Cahaba</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    
         <!--END OF NAVBAR-->
-    </header>
+    <!--</header>-->
     <body>
-        <div class="container">
+        <div class="app">
+            <div class="navbarBham navbar navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand text-muted" href="#/">Bham Brews</a>
+                    <div class ="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="#"><a href="#/">Welcome</a></li>
+                            <li><a href="#goodppl">Good People</a></li>
+                            <li><a href="#avondale">Avondale</a></li>
+                            <li><a href="#trimtab">Trim Tab</a></li>
+                            <li><a href="#cahaba">Cahaba</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div ng-view></div>
+            <footer class="footer">
+                <div class="container">
+                    <p>Copyright 2016, The Bham Brews Team.</p>
+                </div>
+            </footer>
         </div>
         <!--<div ng-view></div>-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>

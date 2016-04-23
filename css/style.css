@@ -1,5 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911);
 body {
   background-color: #CCCECF;
+}
+.app {
+  width: 100%;
+  overflow: hidden;
+  background-color: #7db78d;
+}
+p {
+  padding: 2em 0;
+  font-family: Raleway;
+  font-size: 1.2em;
+  color: #f1f1f1;
+}
+.bhamHeadImg {
+  background-image: url('/Bham-pics/BirminghamALskyline_2_curtispalmer.jpg');
+  height: 35em;
+  max-width: 100%;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 2.5em;
+}
+.bhamHeadImg .page-header h1 {
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 6em;
+  color: white;
+  text-align: center;
+  padding-top: 2em;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: gray;
+}
+.footer p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: .8em;
+}
+.carousel .carousel-inner {
+  height: 35em;
+}
+.carousel .carousel-inner .item {
+  height: 100%;
+  margin: 0 auto;
+}
+.carousel .carousel-inner .item img {
+  height: 100%;
+  width: 75%;
 }
 .maps {
   height: 300px;
@@ -13,14 +57,6 @@ body {
 #directions-panel {
   height: 100%;
   overflow: auto;
-}
-.bhamHeadImg {
-  background-image: url('/Bham-pics/BirminghamALskyline_2_curtispalmer.jpg');
-  height: 25em;
-  max-width: 100%;
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: 2.5em;
 }
 .avondale {
   margin-top: 3.5em;
