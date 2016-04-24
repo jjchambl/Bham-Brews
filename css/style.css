@@ -50,9 +50,20 @@ body {
 .cahaba {
   margin-top: 6.5em;
 }
+#imgContainer {
+  text-align: center;
+}
+#logoBackground {
+  background-image: url("/Brewery-pics/cahabaBrewBackgroundImg.jpg");
+  background-size: cover;
+  height: 17em;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  border-radius: 5px;
+}
 #cahabaImg {
-  background-image: url(http://www.cahabariver.net/images/jfishrvr.jpg);
   width: auto;
-  height: 23em;
+  height: 10em;
+  padding-left: 29em;
   max-width: 100%;
 }
