@@ -55,6 +55,7 @@ p {
 }
 .footer {
   border-top: 1px solid gray;
+  background-color: black;
 }
 .footer p {
   font-family: 'Times New Roman', Times, serif;
