@@ -44,6 +44,15 @@ body {
   font-style: italic;
   color: #EBF2EB;
 }
-#beerList {
+.brewList {
   margin-right: .5em;
+}
+.cahaba {
+  margin-top: 6.5em;
+}
+#cahabaImg {
+  background-image: url(http://www.cahabariver.net/images/jfishrvr.jpg);
+  width: auto;
+  height: auto;
+  max-width: 100%;
 }
