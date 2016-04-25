@@ -1,7 +1,9 @@
 <div class="trimTab">
+    <div class="container">
     <div class="row">
         <div class="col-md-12 trimTabBackground"><img src="/Brewery-pics/trimTabLogo.png" alt="" class="trimTabImg"></div>
-        <div class="col-md-5 brewInfo"><h2 class="contentTitles">CONTENT AND SOCIAL LINKS AND STUFF HERE</h2>Some content
+        <div class="col-md-4"><img id="trimTabSocial" src="/Brewery-pics/tt_reserve_01.jpg" alt="Trim Tab Info"></div>
+        <div class="col-md-8 brewInfo"><h2 class="contentTitles">CONTENT AND SOCIAL LINKS AND STUFF HERE</h2>Some content
             blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
             blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
             blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
@@ -10,21 +12,6 @@
             blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
             blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
             blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-        </div>
-        <div class="mapContainer">
-            <div class="maps">
-                <ng-map center="33.5128,-86.7909" zoom="8">
-                    <marker position="33.5128,-86.7909" title="Trim Tab Brewery!"></marker>
-                    <directions
-                    draggable="true"
-                    panel="directions-panel"
-                    travel-mode="DRIVING"
-                    origin="current-location"
-                    destination="2721 5th Ave S, Birmingham, Alabama  35233">
-                    </directions>
-                </ng-map>
-            </div>
-            <div id="directions-panel"></div>
         </div>
     </div>
     <div class="row">
@@ -50,7 +37,26 @@
             blah blah blah blah blah blah blahvblah blah blah blah blah blah blahblah blah blah blah blah blah blah
             blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
         </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 trimTabMapContainer">
+                <div class="maps">
+                    <ng-map center="33.5128,-86.7909" zoom="8">
+                        <marker position="33.5128,-86.7909" title="Trim Tab Brewery!"></marker>
+                        <directions
+                            draggable="true"
+                            panel="directions-panel"
+                            travel-mode="DRIVING"
+                            origin="current-location"
+                            destination="2721 5th Ave S, Birmingham, Alabama  35233">
+                        </directions>
+                    </ng-map>
+                </div>
+            </div>
+            <div class="col-md-4 mapContainer" id="directions-panel"></div>
+        </div>
+    </div>
         <!--<div class="col-md-3"><h2>Twitter feed here</h2></div>-->
         <!--<div class="col-md-3" id="directions-panel"></div>-->
-    </div>
 </div>
