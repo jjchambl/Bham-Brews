@@ -111,6 +111,7 @@ p {
 .trimTabTapRoomDiv {
   height: 17em;
   margin-top: 0.5em;
+  padding-left: 0;
 }
 #trimTabTapImg {
   width: 100%;
