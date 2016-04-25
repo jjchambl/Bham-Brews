@@ -105,14 +105,16 @@ p {
   background-position-y: 35%;
   height: 17em;
   margin-top: 0.5em;
-  margin-right: 0.5em;
   border-radius: 5px;
   text-align: right;
 }
-#trimTabSocial {
-  width: 26em;
-  border-radius: 5px;
+.trimTabTapRoomDiv {
+  height: 17em;
   margin-top: 0.5em;
+}
+#trimTabTapImg {
+  width: 100%;
+  border-radius: 5px;
 }
 .trimTabMapContainer {
   width: 47.75em;
