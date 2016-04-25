@@ -2,11 +2,23 @@ angular.module("brewApp")
 
 .controller("WelcomeCtrl", WelcomeController);
 
-WelcomeController.$inject = ["$scope"];
+WelcomeController.$inject = ["$scope", 'brewFactory'];
 
-function WelcomeController($scope) {
-    $scope.sayHello = function() {
+function WelcomeController($scope, brewFactory) {
+    var sayHello = function() {
         console.log("hello!");
     }
-    $scope.init = $scope.sayHello();
+    
+    var getBrews = function() {
+        brewFactory.getBrews();
+        console.log(brewFactory.goodppl);
+        
+        // if (brewFactory.getBrews() == undefined) {
+        //     console.log('loading...');
+        // } else {            
+        //     console.log(brewFactory.getBrews());
+        // }
+    }
+    
+    $scope.init = getBrews();
 }
