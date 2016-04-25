@@ -1,18 +1,56 @@
-<h2>{{message}}</h2>
-
-<div class="mapContainer">
-    <div class="maps">
-        <ng-map center="33.5128,-86.7909" zoom="8">
-            <marker position="33.5128,-86.7909" title="Trim Tab Brewery!"></marker>
-            <directions
-            draggable="true"
-            panel="directions-panel"
-            travel-mode="DRIVING"
-            origin="current-location"
-            destination="2721 5th Ave S, Birmingham, Alabama  35233">
-            </directions>
-        </ng-map>
+<div class="trimTab">
+    <div class="row">
+        <div class="col-md-12 trimTabBackground"><img src="/Brewery-pics/trimTabLogo.png" alt="" class="trimTabImg"></div>
+        <div class="col-md-5 brewInfo"><h2 class="contentTitles">CONTENT AND SOCIAL LINKS AND STUFF HERE</h2>Some content
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+        </div>
+        <div class="mapContainer">
+            <div class="maps">
+                <ng-map center="33.5128,-86.7909" zoom="8">
+                    <marker position="33.5128,-86.7909" title="Trim Tab Brewery!"></marker>
+                    <directions
+                    draggable="true"
+                    panel="directions-panel"
+                    travel-mode="DRIVING"
+                    origin="current-location"
+                    destination="2721 5th Ave S, Birmingham, Alabama  35233">
+                    </directions>
+                </ng-map>
+            </div>
+            <div id="directions-panel"></div>
+        </div>
     </div>
-    <div id="directions-panel"></div>
+    <div class="row">
+        <div class="col-md-4 brewList brewInfo"><h2 class="contentTitles">BEER LIST HERE</h2>
+            Some more content blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahvblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+        </div>
+        <div class="col-md-5 brewInfo"><h2 class="contentTitles">UNTAPPED RATINGS HERE</h2>
+            Even more content blah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahvblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+        </div>
+        <!--<div class="col-md-3"><h2>Twitter feed here</h2></div>-->
+        <!--<div class="col-md-3" id="directions-panel"></div>-->
+    </div>
 </div>
-
