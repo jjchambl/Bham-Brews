@@ -9,16 +9,13 @@ function WelcomeController($scope, brewFactory) {
         console.log("hello!");
     }
     
+    // $scope.beers = brewFactory.goodppl;
+    
     var getBrews = function() {
         brewFactory.getBrews();
         console.log(brewFactory.goodppl);
-        
-        // if (brewFactory.getBrews() == undefined) {
-        //     console.log('loading...');
-        // } else {            
-        //     console.log(brewFactory.getBrews());
-        // }
+        // $scope.beers = brewFactory.goodppl;
     }
-    
+    // $scope.init = brewFactory.goodppl = [];
     $scope.init = getBrews();
 }
