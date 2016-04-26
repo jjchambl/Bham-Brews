@@ -20,12 +20,14 @@ body {
   background-color: #CCCECF;
 }
 .app {
+  padding: 0;
+  margin: 0;
   width: 100%;
   overflow: hidden;
   background-color: #659572;
 }
-.welcome {
-  height: 100%;
+.navbar {
+  background-color: transparent;
 }
 p {
   padding: 2em 0;
@@ -34,9 +36,10 @@ p {
   color: #f1f1f1;
 }
 .bhamHeadImg {
+  padding-top: 0;
+  margin-top: 0;
   background-image: url('/Bham-pics/BirminghamALskyline_2_curtispalmer.jpg');
-  height: 35em;
-  max-width: 100%;
+  height: 100vh;
   background-size: cover;
   background-position-x: center;
 }
