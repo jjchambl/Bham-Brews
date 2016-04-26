@@ -4,18 +4,26 @@
 </div>
 
 <!--beer panels-->
-<!--<div class="container">
+<div class="container">
     <div class="row">
         <div class="col-md-4" ng-repeat='beer in beers'>
-            <div class="panel panel-default">
-                <div class="panel-heading"><img src="{{beer.beer_label}}" alt="Beer label"></div>
-                <div class="panel-body">
-                    <p></p>
+            <div class="panel beer-panel">
+                <div class="head"><h3>{{beer.beer.beer_name}}</h3></div>
+                <hr>
+                <div class="row panel-body">
+                    <div class="col-md-4"><img src="{{beer.beer_label}}" alt="Beer Image"></div>
+                    <div class="col-md-8"><p>Style: {{beer.beer_style}}</p></div>
+                    <div class="col-md-8"><p>abv: {{beer.beer_abv}}</p></div>
+                    <div class="col-md-8"><p>born: {{created_at | date: 'medium'}}</p></div>
+                    <div class="col-xs-12">
+                        <span>Rating: {{beer.rating_score}}</span><span>  # Votes: {{beer.rating_count}}</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>-->
+</div>
+<!--End of beer panels-->
 
 <div class="row intro">
     <div class="col-sm-8 col-sm-offset-2">
