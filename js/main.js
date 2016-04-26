@@ -1,6 +1,6 @@
-angular.module('brewApp', ['ngRoute', "ngMap"])
+var app = angular.module('brewApp', ['brewApp.factories', 'ngRoute', "ngMap"]);
 
-.config(['$routeProvider', function($routeProvider) {
+app.config(['$routeProvider', function($routeProvider) {
     $routeProvider
     .when('/', {
         templateUrl: 'views/welcome.html',

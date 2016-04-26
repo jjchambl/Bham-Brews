@@ -10,7 +10,7 @@ body {
 .app {
     width: 100%;
     overflow: hidden;
-    background-color: #7db78d;
+    background-color: #659572;
 }
 .navbar {
     // background-color: transparent;
@@ -37,8 +37,34 @@ p {
         color: white;
         text-align: center;
         padding-top: 2em;
-        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: gray;
+    }
+}
+.intro {
+    background-color: @light-background;
+    text-align: center;
+    // border-bottom: 2px solid gray;
+    p {
+        color: black;
+        text-align: left;
+        padding: .5em .2em 0;
+    }
+    .info-button {
+        padding: 2em 0;
+        a {
+            position: relative;
+            font-family: @title-font;
+            text-transform: uppercase;
+            padding: @button-height * .3 @button-width * .3;
+            background-color: @green-background;
+            color: white;
+            text-decoration: none;
+            border-radius: @button-border-radius;
+            &:hover {
+                background-color: lighten(@green-background, 15%);
+            }
+        }
     }
 }
 .space {
@@ -74,13 +100,14 @@ p {
     }
 }
 .carousel {
+    height: 100%;
+    text-align: center;    
     .carousel-inner {
-        max-height: 35em;
+        max-height: 40em;
         .item {
             // height: 100%;
             img {
                 max-height: 90%;
-                width: auto;
                 margin-right: auto;
                 margin-left: auto;
             }
@@ -116,13 +143,45 @@ p {
     margin-top:3.5em;
 }
 
+.avondaleLogoImg {
+    height:17em;
+    padding-right: 0.5em;
+    max-width: 100%;
+    cursor:pointer;
+}
 .avondaleBrewImg {
-    margin:.5em;
+    margin: 0.5em;
+    max-width: 100%;
+    padding-right: 5%;
+}
+
+.avondaleBackground {
+    background-image: url("/Brewery-pics/avondaleBackground.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 35%;
     max-width:100%;
+    height: 17em;
+    // width: 25em;
+    margin-top: 0.5em;
+    // margin-right: 0.5em;
+    border-radius: 5px;
+    text-align: right;
 }
 // End of Avondale
 
+<<<<<<< HEAD
 // Trim Tab Brewery
+=======
+// .avondaleRoomDiv {
+//     height: 17em;
+//     margin-top: 0.5em;
+//     padding-left: 0;
+// }
+
+//Trim Tab
+
+>>>>>>> 42ef532b825f90ce9137afb5d5990899e2417cc5
 .trimTab{
     margin-top: 3.5em;
 }
@@ -141,15 +200,22 @@ p {
     height: 17em;
     // width: 25em;
     margin-top: 0.5em;
-    margin-right: 0.5em;
+    // margin-right: 0.5em;
     border-radius: 5px;
     text-align: right;
 }
 
-#trimTabSocial {
-    width: 26em;
-    border-radius: 5px;
+.trimTabTapRoomDiv {
+    height: 17em;
     margin-top: 0.5em;
+    padding-left: 0;
+}
+
+#trimTabTapImg {
+    // background-image: url("/Brewery-pics/tt_reserve_01.jpg");
+    // background-size: cover;
+    width: 100%;
+    border-radius: 5px;
 }
 
 .trimTabMapContainer {
@@ -164,11 +230,17 @@ p {
 // End of Trim Tab
 
 // Brew Pages
-.brewInfo {
+.avondaleRoomDiv {
+    height: 17em;
+    margin-top: 0.5em;
+    padding-left: 0;
+}
+
+.avondaleInfo {
     background-color: #6A7073;
     color: #F9F7FA;
     border-radius: 6px;
-    margin-top: .5em;
+    margin: .5em;
     // margin-right: .5em;
     text-align: center;
     font-family: Fjalla-One;
@@ -345,6 +417,7 @@ p {
 // }
 
 // <img class="irc_mi i7iNGJxdmBvc-pQOPx8XEepE" alt="" style="margin-top: 0px;" src="http://www.cahabariver.net/images/jfishrvr.jpg" width="524" height="393">
+<<<<<<< HEAD
 @media screen and (max-width: 768px) {
     #cahabaImg {
         padding-left: 40%;
@@ -386,3 +459,52 @@ p {
         
     }
 }
+=======
+
+//Good People
+.goodPeople {
+    margin-top: 3.5em;
+}
+
+.goodPeopleImg {
+    margin: 0.5em;
+    max-width: 100%;
+    // padding-right: 5%;
+}
+
+.goodPeopleBackground {
+    background-image: url("/Brewery-pics/goodPeopleCaroImg.jpg");
+    // background-size: cover;
+    background-position-x: 0%;
+    background-position-y: 25%;
+    height: 17em;
+    // width: 25em;
+    margin-top: 0.5em;
+    // margin-right: 0.5em;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.goodPeopleTapRoomDiv {
+    height: 17em;
+    margin-top: 0.5em;
+    padding-left: 0;
+}
+
+#goodPeopleTapImg {
+    // background-image: url("/Brewery-pics/tt_reserve_01.jpg");
+    // background-size: cover;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.goodPeopleMapContainer {
+    width: 47.75em;
+    border-radius: 5px;
+    background-color: #6A7073;
+    // margin-left: 2.20em;
+    margin-top: 0.5em;
+    // margin-right: 0.65em;
+    padding-bottom: 0.5em;
+}
+>>>>>>> 42ef532b825f90ce9137afb5d5990899e2417cc5
