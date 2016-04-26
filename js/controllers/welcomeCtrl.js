@@ -20,5 +20,5 @@ function WelcomeController($scope, $http, goodFactory) {
         // $scope.beers = goodFactory.brews[0];
     }
     
-    $scope.init = getBrews();
+    // $scope.init = getBrews();
 }

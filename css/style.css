@@ -22,7 +22,7 @@ body {
 .app {
   width: 100%;
   overflow: hidden;
-  background-color: #7db78d;
+  background-color: #659572;
 }
 .welcome {
   height: 100%;
@@ -48,6 +48,31 @@ p {
   padding-top: 2em;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: gray;
+}
+.intro {
+  background-color: #efefef;
+  text-align: center;
+  border-bottom: 2px solid gray;
+}
+.intro p {
+  color: black;
+  text-align: left;
+}
+.intro .info-button {
+  padding: 2em 0;
+}
+.intro .info-button a {
+  position: relative;
+  font-family: 'Goudy Bookletter 1911', serif;
+  text-transform: uppercase;
+  padding: 1.2em 3.6em;
+  background-color: #659572;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.intro .info-button a:hover {
+  background-color: #92b59b;
 }
 .space {
   height: 1em;
@@ -79,11 +104,10 @@ p {
   font-size: .8em;
 }
 .carousel .carousel-inner {
-  max-height: 35em;
+  max-height: 40em;
 }
 .carousel .carousel-inner .item img {
   max-height: 90%;
-  width: auto;
   margin-right: auto;
   margin-left: auto;
 }
