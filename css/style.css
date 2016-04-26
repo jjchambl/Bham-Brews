@@ -1,11 +1,28 @@
 @import url(https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911);
+.beer-panel {
+  margin: 1em 0;
+  text-align: center;
+  font-family: 'Raleway';
+}
+.beer-panel .head {
+  padding: 0;
+  margin: 0;
+}
+.beer-panel h3 {
+  font-family: 'Goudy Bookletter 1911', serif;
+}
+.beer-panel p {
+  text-align: left;
+  color: black;
+  padding: 0;
+}
 body {
   background-color: #CCCECF;
 }
 .app {
   width: 100%;
   overflow: hidden;
-  background-color: #7db78d;
+  background-color: #659572;
 }
 .welcome {
   height: 100%;
@@ -29,8 +46,33 @@ p {
   color: white;
   text-align: center;
   padding-top: 2em;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: gray;
+}
+.intro {
+  background-color: #efefef;
+  text-align: center;
+}
+.intro p {
+  color: black;
+  text-align: left;
+  padding: .5em .2em 0;
+}
+.intro .info-button {
+  padding: 2em 0;
+}
+.intro .info-button a {
+  position: relative;
+  font-family: 'Goudy Bookletter 1911', serif;
+  text-transform: uppercase;
+  padding: 1.2em 3.6em;
+  background-color: #659572;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.intro .info-button a:hover {
+  background-color: #92b59b;
 }
 .space {
   height: 1em;
@@ -61,12 +103,15 @@ p {
   font-family: 'Times New Roman', Times, serif;
   font-size: .8em;
 }
+.carousel {
+  height: 100%;
+  text-align: center;
+}
 .carousel .carousel-inner {
-  max-height: 35em;
+  max-height: 40em;
 }
 .carousel .carousel-inner .item img {
   max-height: 90%;
-  width: auto;
   margin-right: auto;
   margin-left: auto;
 }
