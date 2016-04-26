@@ -10,7 +10,7 @@ body {
 .app {
     width: 100%;
     overflow: hidden;
-    background-color: #7db78d;
+    background-color: #659572;
 }
 .navbar {
     // background-color: transparent;
@@ -37,8 +37,34 @@ p {
         color: white;
         text-align: center;
         padding-top: 2em;
-        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: gray;
+    }
+}
+.intro {
+    background-color: @light-background;
+    text-align: center;
+    // border-bottom: 2px solid gray;
+    p {
+        color: black;
+        text-align: left;
+        padding: .5em .2em 0;
+    }
+    .info-button {
+        padding: 2em 0;
+        a {
+            position: relative;
+            font-family: @title-font;
+            text-transform: uppercase;
+            padding: @button-height * .3 @button-width * .3;
+            background-color: @green-background;
+            color: white;
+            text-decoration: none;
+            border-radius: @button-border-radius;
+            &:hover {
+                background-color: lighten(@green-background, 15%);
+            }
+        }
     }
 }
 .space {
@@ -74,13 +100,14 @@ p {
     }
 }
 .carousel {
+    height: 100%;
+    text-align: center;    
     .carousel-inner {
-        max-height: 35em;
+        max-height: 40em;
         .item {
             // height: 100%;
             img {
                 max-height: 90%;
-                width: auto;
                 margin-right: auto;
                 margin-left: auto;
             }
