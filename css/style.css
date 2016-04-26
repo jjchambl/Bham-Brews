@@ -240,11 +240,11 @@ p {
 .goodPeopleBackground {
   background-image: url("/Brewery-pics/goodPeopleCaroImg.jpg");
   background-position-x: 0%;
-  background-position-y: 35%;
+  background-position-y: 25%;
   height: 17em;
   margin-top: 0.5em;
   border-radius: 5px;
-  text-align: right;
+  text-align: left;
 }
 .goodPeopleTapRoomDiv {
   height: 17em;
