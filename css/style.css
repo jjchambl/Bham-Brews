@@ -24,10 +24,7 @@ body {
   margin: 0;
   width: 100%;
   overflow: hidden;
-  background-color: none;
-}
-.navbar {
-  background-color: white;
+  background-color: #659572;
 }
 p {
   padding: 2em 0;
@@ -50,7 +47,7 @@ p {
   text-align: center;
   padding-top: 2em;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: gray;
+  -webkit-text-stroke-color: black;
 }
 .intro {
   background-color: #efefef;
@@ -81,12 +78,18 @@ p {
   height: 1em;
   background-color: white;
 }
+.social {
+  text-align: center;
+}
+.social h2 {
+  color: white;
+  font-family: 'Goudy Bookletter 1911', serif;
+}
 .social .calendar {
-  width: 25em;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
   background-color: #f2f3f4;
-  text-align: center;
 }
 .social .calendar .panel-heading {
   font-family: 'Goudy Bookletter 1911', serif;
@@ -97,6 +100,11 @@ p {
 .social .calendar p {
   color: black;
   padding: .5em 0;
+}
+.social .twitter {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
 }
 .footer {
   border-top: 1px solid gray;
