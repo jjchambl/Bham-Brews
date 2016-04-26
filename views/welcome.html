@@ -4,9 +4,9 @@
 </div>
 
 <!--beer panels-->
-<div class="container">
+<!--<div class="container">
     <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-3" ng-repeat='beer in beers'>
+        <div class="col-sm-6 col-md-4 col-lg-3" ng-repeat='beer in beers | limitTo: 8'>
             <div class="panel beer-panel">
                 <div class="head"><h3>{{beer.beer.beer_name}}</h3></div>
                 <hr>
@@ -14,7 +14,6 @@
                     <div class="col-xs-4"><img src="{{beer.beer.beer_label}}" alt="Beer Image"></div>
                     <div class="col-xs-8"><p>Style: {{beer.beer.beer_style}}</p></div>
                     <div class="col-xs-8"><p>abv: {{beer.beer.beer_abv}}</p></div>
-                    <div class="col-xs-8"><p>born: {{beer.beer.created_at}}</p></div>
                     <div class="col-xs-12">
                         <span><strong>Rating:</strong> <small>{{beer.beer.rating_score}}</small></span><span><strong>  Votes: </strong><small>{{beer.beer.rating_count}}</small></span>
                     </div>
@@ -22,7 +21,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 <!--End of beer panels-->
 
 <div class="row intro">
