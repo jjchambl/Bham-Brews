@@ -137,11 +137,12 @@ p {
     width: 30em;
     background-color: #6A7073;
     border-radius: 5px;
-    margin-left: 0.5em;
+    // margin-left: 0.5em;
     margin-top: 0.5em; 
 }
 // End of Maps
 
+// Avondale Brewery
 .avondale {
     margin-top:3.5em;
 }
@@ -171,6 +172,10 @@ p {
     border-radius: 5px;
     text-align: right;
 }
+// End of Avondale
+
+
+// Trim Tab Brewery
 
 // .avondaleRoomDiv {
 //     height: 17em;
@@ -179,6 +184,7 @@ p {
 // }
 
 //Trim Tab
+
 
 .trimTab{
     margin-top: 3.5em;
@@ -225,6 +231,7 @@ p {
     // margin-right: 0.65em;
     padding-bottom: 0.5em;
 }
+// End of Trim Tab
 
 // Brew Pages
 .avondaleRoomDiv {
@@ -244,6 +251,16 @@ p {
     font-weight: 400;
 }
 
+.brewInfo {
+    background-color: #6A7073;
+    color: #F9F7FA;
+    border-radius: 6px;
+    margin-top: 0.5em;
+    // margin-left: 1.5em;
+    text-align: center;
+    font-family: Fjalla-One;
+    font-weight: 400;
+
 .contentTitles {
     font-family: Lora;
     font-weight: bold;
@@ -258,12 +275,37 @@ p {
 // Cahaba Brewing
 
 .cahaba {
-    margin-top: 6.5em;
+    margin-top: 3.65em;
+}
+
+// .cahabaSlides {
+//     display: none;
+//     width: 50em;
+// }
+
+// #cahabaSocialContent {
+// }
+
+// #cahabaBrewContent {
+    
+// }
+
+// #cahabaTweetContent {
+    
+// }
+
+// #cahabaMapContent {
+    
+// }
+
+#cahabaContent {
+    padding-left: 8.5%;
 }
 
 #cahabaBrewList {
-    margin-left: 1em;
-    width: 54.20em;
+    // margin-left: 3em;
+    margin-right: 1em;
+    width: 49.8em;
     height: 17.20em;
 }
 
@@ -278,7 +320,7 @@ p {
     color: #F9F7FA;
     border-radius: 6px;
     margin-top: 0.5em;
-    margin-left: 0.5em;
+    // margin-left: 1.5em;
     text-align: center;
     font-family: Fjalla-One;
     font-weight: 400;
@@ -296,8 +338,9 @@ p {
     height: 17em;
     // width: 25em;
     margin-top: 0.5em;
-    margin-right: 0.5em;
-    border-radius: 5px;
+    // margin-right: 0.5em;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 #cahabaImg {
@@ -309,16 +352,18 @@ p {
 }
 
 #cahabaTweets {
-    width: 40em;
+    width: 47.8em;
+    height: 18em;
+    margin-left: 2%;
 }
 
 #cahabaMapContainer {
-    width: 47.75em;
+    width: 46.5em;
     border-radius: 5px;
     background-color: #6A7073;
-    margin-left: 2.20em;
+    // margin-left: 3.8em;
     margin-top: 0.5em;
-    margin-right: 0.65em;
+    margin-right: 1.4em;
     padding-bottom: 0.5em;
 }
 
@@ -326,37 +371,45 @@ p {
     width: 26em;
     border-radius: 5px;
     margin-top: 0.5em;
+    height: 19.5em;
+    // margin-left: 2em;
 }
 
 #cahabaSocialEvents {
-    width: 53.75em;
+    width: 49.8em;
     height: 19.48em;
+    margin-left: 7.5%;
 }
 
-#cahabaUntappd {
-    width: 60.75em;
+#socialImg {
+    padding-left: 0;
+    padding-right: 0;
 }
 
-#cahabaUntappdImg {
-    width: 15em;
-}
+// #cahabaUntappd {
+//     width: 60.75em;
+// }
 
-#cahabaTweets {
-    width: 52em;
-    height: 17em;
-    margin-left: 1em;
-}
+// #cahabaUntappdImg {
+//     width: 15em;
+// }
+
+// #cahabaTweets {
+//     width: 50.5em;
+//     height: 17em;
+//     margin-left: 1em;
+// }
 
 #cahabaTwitter {
     background-image: url("/Brewery-pics/beer-tops-twitter-background.jpg");
     background-size: cover;
     // background-position-x: 45%;
     // background-position-y: 56%;
-    height: 17em;
+    height: 18em;
     border-radius: 7px; 
     padding-top: 5.5em;
     margin-top: 0.5em;
-    margin-left: 1.29em;
+    // margin-left: 3em;
     text-align: center;    
 }
 
@@ -366,18 +419,50 @@ p {
     background-color: #000000;
     border-radius: 7px;
 }
-// #cahabaDirectionsPanel {
-//     height: 100%;
-//     overflow: auto;
-//     width: 30em;
-//     background-color: #6A7073;
-//     border-radius: 5px;
-//     margin-left: .5em;
-//     margin-top: .5em;
-    
-// }
 
-// <img class="irc_mi i7iNGJxdmBvc-pQOPx8XEepE" alt="" style="margin-top: 0px;" src="http://www.cahabariver.net/images/jfishrvr.jpg" width="524" height="393">
+// Cahaba Mobile
+@media screen and (max-width: 768px) {
+    #cahabaImg {
+        padding-left: 40%;
+        padding-top: 5%;
+        margin-top: 11%
+    }
+    
+    #cahabaContent {
+        padding-left: 12%;
+    }
+    
+    #cahabaSocialEvents {
+        width: 24.3em;
+        height: 31.48em;
+        margin-left: 0;
+    }
+    
+    #cahabaBrewList {
+        margin-left: 0;
+        width: 24.5em;
+        height: 17.20em;
+    }
+    
+    #cahabaTweets {
+        width:24.5em;
+        height:30em;
+        margin-left: 0;
+    }
+    
+    #cahabaMapContainer {
+        width: 24.5em;
+        // margin-left: 6.8%;
+        padding-top: 0.2em;
+    }
+    
+    #directions-panel {
+        width: 24.5em;
+        // margin-left: 7%;
+        
+    }
+}
+
 
 //Good People
 .goodPeople {
@@ -425,3 +510,4 @@ p {
     // margin-right: 0.65em;
     padding-bottom: 0.5em;
 }
+
