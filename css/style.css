@@ -52,11 +52,11 @@ p {
 .intro {
   background-color: #efefef;
   text-align: center;
-  border-bottom: 2px solid gray;
 }
 .intro p {
   color: black;
   text-align: left;
+  padding: .5em .2em 0;
 }
 .intro .info-button {
   padding: 2em 0;
@@ -102,6 +102,10 @@ p {
 .footer p {
   font-family: 'Times New Roman', Times, serif;
   font-size: .8em;
+}
+.carousel {
+  height: 100%;
+  text-align: center;
 }
 .carousel .carousel-inner {
   max-height: 40em;
