@@ -9,30 +9,24 @@
             </div>
         </div>
     </div>
+        <div class="container">
     <div class="row">
-        <div class="col-md-4 brewList brewInfo"><h2 class="contentTitles">BEER LIST HERE</h2>
-            Some more content blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-            blah blah blah blah blah blah blahvblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-        </div>
-        <div class="col-md-5 brewInfo"><h2 class="contentTitles">UNTAPPED RATINGS HERE</h2>
-            Even more content blah blah blah blah blah blah blahblah blah blah blah blah blah blah
-            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-            blah blah blah blah blah blah blahvblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-            blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+        <div class="col-sm-6 col-md-4 col-lg-3" ng-repeat='beer in beers | limitTo: 8'>
+            <div class="panel beer-panel">
+                <div class="head"><h3>{{beer.beer.beer_name}}</h3></div>
+                <hr>
+                <div class="row panel-body">
+                    <div class="col-xs-4"><img src="{{beer.beer.beer_label}}" alt="Beer Image"></div>
+                    <div class="col-xs-8"><p>Style: {{beer.beer.beer_style}}</p></div>
+                    <div class="col-xs-8"><p>abv: {{beer.beer.beer_abv}}</p></div>
+                    <div class="col-xs-12">
+                        <span><strong>Rating:</strong> <small>{{beer.beer.rating_score}}</small></span><span><strong>  Votes: </strong><small>{{beer.beer.rating_count}}</small></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</div>
     <div class="container">
         <div class="row">
             <div class="col-md-8 goodPeopleMapContainer">
