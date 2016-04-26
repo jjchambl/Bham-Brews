@@ -294,7 +294,7 @@ p {
   background-color: #000000;
   border-radius: 7px;
 }
-<<<<<<< HEAD
+
 @media screen and (max-width: 768px) {
   #cahabaImg {
     padding-left: 40%;
@@ -326,7 +326,8 @@ p {
   #directions-panel {
     width: 24.5em;
   }
-=======
+}
+
 .goodPeople {
   margin-top: 3.5em;
 }
@@ -358,5 +359,5 @@ p {
   background-color: #6A7073;
   margin-top: 0.5em;
   padding-bottom: 0.5em;
->>>>>>> 42ef532b825f90ce9137afb5d5990899e2417cc5
+  
 }
