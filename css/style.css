@@ -24,10 +24,10 @@ body {
   margin: 0;
   width: 100%;
   overflow: hidden;
-  background-color: #659572;
+  background-color: none;
 }
 .navbar {
-  background-color: transparent;
+  background-color: white;
 }
 p {
   padding: 2em 0;
@@ -203,6 +203,15 @@ p {
   font-family: Fjalla-One;
   font-weight: 400;
 }
+.brewInfo {
+  background-color: #6A7073;
+  color: #F9F7FA;
+  border-radius: 6px;
+  margin-top: 0.5em;
+  text-align: center;
+  font-family: Fjalla-One;
+  font-weight: 400;
+}
 .contentTitles {
   font-family: Lora;
   font-weight: bold;
@@ -297,7 +306,6 @@ p {
   background-color: #000000;
   border-radius: 7px;
 }
-
 @media screen and (max-width: 768px) {
   #cahabaImg {
     padding-left: 40%;
@@ -330,7 +338,6 @@ p {
     width: 24.5em;
   }
 }
-
 .goodPeople {
   margin-top: 3.5em;
 }
@@ -362,5 +369,4 @@ p {
   background-color: #6A7073;
   margin-top: 0.5em;
   padding-bottom: 0.5em;
-  
 }
