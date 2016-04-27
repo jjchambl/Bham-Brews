@@ -221,6 +221,9 @@ p {
   margin-top: 0.5em;
   padding-bottom: 0.5em;
 }
+#trimTabInfo {
+  padding-bottom: 1em;
+}
 .avondaleRoomDiv {
   height: 17em;
   margin-top: 0.5em;
@@ -396,6 +399,9 @@ p {
   width: 100%;
   border-radius: 5px;
 }
+#goodPeopleInfo {
+  padding-bottom: 1em;
+}
 #goodPeopleMapContainer {
   width: 47.75em;
   border-radius: 5px;
@@ -411,22 +417,20 @@ p {
     margin: auto;
   }
   .ggdp {
-    padding-left: 6.5%;
     padding-top: 0.5em;
     margin: auto;
   }
   .trimTabBackground {
     text-align: center;
+    background-position-x: 30%;
   }
   #trimTabMapContainer {
     width: 24.5em;
     padding-top: 0.2em;
     margin: auto;
     margin-top: 0.5em;
-    padding-left: 6.5%;
   }
   .ttdp {
-    padding-left: 6.5%;
     padding-top: 0.5em;
     margin: auto;
   }
