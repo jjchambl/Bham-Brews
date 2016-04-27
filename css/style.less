@@ -17,6 +17,10 @@ body {
 .navbar {
     text-transform: uppercase;
     font-family: @content-font;// background-color: white;
+    a {
+        color: white;
+        text-decoration: none;
+    }
 }
 .welcome {
     // height: 100%;
@@ -101,7 +105,6 @@ p {
         font-family: @title-font;
     }
     .calendar {
-        width: 75%;
         margin-left: auto;
         margin-right: auto;
         background-color: #f2f3f4;
@@ -110,6 +113,14 @@ p {
             text-transform: uppercase;
             font-size: 1.7em;
             font-weight: bold;
+            border-bottom: 1px solid black;
+        }
+        .panel-body {
+            border-bottom: 1px solid black;
+        }
+        h2 {
+            color: black;
+            font-family: @content-font;
         }
         p {
             color: black;            
@@ -117,9 +128,7 @@ p {
         }
     }
     .twitter {
-        margin-left: auto;
-        margin-right: auto;
-        width: 85%;
+        height: 50em;
     }
 }
 .footer {
