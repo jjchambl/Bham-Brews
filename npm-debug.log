@@ -18,8 +18,8 @@
 9 verbose stack     at maybeClose (internal/child_process.js:821:16)
 9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
 10 verbose pkgid depotucapstoneproject@0.0.1
-11 verbose cwd /Users/MaryBeth/Documents/Source/DepotU-Capstone-Project
-12 error Darwin 15.4.0
+11 verbose cwd /Users/WilliamRainey/Documents/Source/DepotU-Capstone-Project
+12 error Darwin 15.3.0
 13 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "less"
 14 error node v4.3.1
 15 error npm  v2.14.12
