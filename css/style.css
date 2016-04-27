@@ -23,6 +23,7 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
+  overflow: hidden;
   background-color: #659572;
 }
 .navbar {
@@ -57,20 +58,6 @@ p {
   padding-top: 2em;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
-}
-.bhamHeadImg .scroll {
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  width: 5em;
-  height: 5em;
-  background-color: white;
-  color: black;
-}
-.bhamHeadImg .scroll .fixed {
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
 }
 .intro {
   background-color: #659572;
@@ -145,13 +132,14 @@ p {
 .carousel {
   text-align: center;
 }
-.carousel .carousel-inner {
-  max-height: 40em;
-}
 .carousel .carousel-inner .item img {
-  max-height: 35em;
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
+}
+.carousel .carousel-inner .item h2 {
+  font-family: 'Goudy Bookletter 1911', serif;
+  text-transform: uppercase;
 }
 .maps {
   height: auto;

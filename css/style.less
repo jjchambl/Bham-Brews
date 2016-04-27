@@ -11,19 +11,16 @@ body {
     padding: 0;
     margin: 0;
     width: 100%;
-    // overflow: hidden;
+    overflow: hidden;
     background-color: @green-background;
 }
 .navbar {
     text-transform: uppercase;
-    font-family: @content-font;// background-color: white;
+    font-family: @content-font;
     a {
         color: white;
         text-decoration: none;
     }
-}
-.welcome {
-    // height: 100%;
 }
 p {
     padding: 2em 0;
@@ -40,7 +37,6 @@ p {
     max-width: 100%;
     background-size:cover;
     background-position-x: center;
-    // background-position-y: 1.5em;
     h1 {
         font-family: 'Goudy Bookletter 1911', serif;
         font-size: 6em;
@@ -49,22 +45,6 @@ p {
         padding-top: 2em;
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: black;
-    }    
-    .scroll {
-        position: fixed;
-        z-index: 1;
-        left: 50%;
-        // margin-right:auto;
-        // margin-left: auto;
-        width: 5em;
-        height: 5em;
-        background-color: white;
-        color: black;        
-        .fixed {
-            position: relative;
-            margin-right:auto;
-            margin-left: auto;
-        }
     }
 }
 .intro {
@@ -142,13 +122,16 @@ p {
 .carousel {
     text-align: center;    
     .carousel-inner {
-        max-height: 40em;
         .item {
             // height: 100%;
             img {
-                max-height: 35em;
+                width: 80%;
                 margin-right: auto;
                 margin-left: auto;
+            }
+            h2 {
+                font-family: @title-font;
+                text-transform: uppercase;
             }
         }
     }
