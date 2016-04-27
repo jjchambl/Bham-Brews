@@ -23,8 +23,11 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-  overflow: hidden;
   background-color: #659572;
+}
+.navbar {
+  text-transform: uppercase;
+  font-family: 'Raleway';
 }
 p {
   padding: 2em 0;
@@ -33,10 +36,12 @@ p {
   color: #f1f1f1;
 }
 .bhamHeadImg {
+  text-align: center;
   padding-top: 0;
   margin-top: 0;
   background-image: url('/Bham-pics/BirminghamALskyline_2_curtispalmer.jpg');
-  height: 100vh;
+  height: 35em;
+  max-width: 100%;
   background-size: cover;
   background-position-x: center;
 }
@@ -49,12 +54,26 @@ p {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
 }
+.bhamHeadImg .scroll {
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  width: 5em;
+  height: 5em;
+  background-color: white;
+  color: black;
+}
+.bhamHeadImg .scroll .fixed {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
 .intro {
-  background-color: #efefef;
+  background-color: #659572;
   text-align: center;
 }
 .intro p {
-  color: black;
+  color: white;
   text-align: left;
   padding: .5em .2em 0;
 }
@@ -66,13 +85,13 @@ p {
   font-family: 'Goudy Bookletter 1911', serif;
   text-transform: uppercase;
   padding: 1.2em 3.6em;
-  background-color: #659572;
-  color: white;
+  background-color: #efefef;
+  color: black;
   text-decoration: none;
   border-radius: 3px;
 }
 .intro .info-button a:hover {
-  background-color: #92b59b;
+  background-color: #c9c9c9;
 }
 .space {
   height: 1em;
@@ -392,6 +411,9 @@ p {
   width: 100%;
   border-radius: 5px;
 }
+#goodPeopleInfo {
+  padding-bottom: 1em;
+}
 #goodPeopleMapContainer {
   width: 47.75em;
   border-radius: 5px;
@@ -407,22 +429,20 @@ p {
     margin: auto;
   }
   .ggdp {
-    padding-left: 6.5%;
     padding-top: 0.5em;
     margin: auto;
   }
   .trimTabBackground {
     text-align: center;
+    background-position-x: 30%;
   }
   #trimTabMapContainer {
     width: 24.5em;
     padding-top: 0.2em;
     margin: auto;
     margin-top: 0.5em;
-    padding-left: 6.5%;
   }
   .ttdp {
-    padding-left: 6.5%;
     padding-top: 0.5em;
     margin: auto;
   }

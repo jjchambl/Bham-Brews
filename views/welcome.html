@@ -1,5 +1,6 @@
-<div class="bhamHeadImg">
+<div class="bhamHeadImg" id="bhamHeadImg">
     <h1>Bham Brews</h1>
+    <!--<div class="scroll">Scroll Down, pls</div>-->
 </div>
 
 <!--beer panels-->
@@ -94,8 +95,8 @@
             <div class="panel calendar">
                 <div class="panel-heading">Calendar of Events</div>
                 <hr>
-                <div class="panel-body" ng-repeat='event in events'>
-                    <p><strong>{{event.starttime}}</strong></p>
+                <div class="panel-body" ng-repeat='event in goodEvents'>
+                    <p><strong>{{event.date}}</strong></p>
                     <p><strong>Drinks</strong></p>
                     <p>somewhere, AL</p>
                 </div>            
