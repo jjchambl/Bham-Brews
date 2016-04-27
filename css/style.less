@@ -12,10 +12,10 @@ body {
     margin: 0;
     width: 100%;
     overflow: hidden;
-    background-color: #659572;
+    background-color: @green-background;
 }
 .navbar {
-    background-color: transparent;
+    // background-color: white;
 }
 .welcome {
     // height: 100%;
@@ -42,7 +42,7 @@ p {
         text-align: center;
         padding-top: 2em;
         -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: gray;
+        -webkit-text-stroke-color: black;
     }
 }
 .intro {
@@ -76,13 +76,17 @@ p {
     background-color: white;
 }
 .social {
+    text-align: center;
     // background-color: #94d4af;
+    h2 {
+        color: white;
+        font-family: @title-font;
+    }
     .calendar {
-        width: 25em;
+        width: 75%;
         margin-left: auto;
         margin-right: auto;
         background-color: #f2f3f4;
-        text-align: center;
         .panel-heading {
             font-family: 'Goudy Bookletter 1911', serif;
             text-transform: uppercase;
@@ -93,6 +97,11 @@ p {
             color: black;            
             padding: .5em 0;
         }
+    }
+    .twitter {
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
     }
 }
 .footer {
@@ -146,21 +155,35 @@ p {
 .avondale {
     margin-top:3.5em;
 }
+.avondaleInfoDiv {
+    
+}
 
 .avondaleLogoImg {
-    height:17em;
-    padding-right: 0.5em;
+    height:14em;
+    // padding-right: 0.5em;
     max-width: 100%;
     cursor:pointer;
+    margin-top:1em;
+}
+.avondaleLogoImg2 {
+    height:14em;
+    // padding-top:.5em;
+    // padding-right: 0.5em;
+    max-width: 100%;
+    cursor:pointer;
+    margin-top:1em;
 }
 .avondaleBrewImg {
     margin: 0.5em;
     max-width: 100%;
-    padding-right: 5%;
+    text-align:center;
+    // padding-right: 5%;
 }
 
 .avondaleBackground {
-    background-image: url("/Brewery-pics/avondaleBackground.jpg");
+    // background-image: url("/Brewery-pics/avondaleBackground.jpg");
+    background-color:black;
     background-size: cover;
     background-position-x: center;
     background-position-y: 35%;
@@ -170,7 +193,32 @@ p {
     margin-top: 0.5em;
     // margin-right: 0.5em;
     border-radius: 5px;
-    text-align: right;
+}
+.avondaleArt {
+    background-image: url("/Brewery-pics/ourstoryhero.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 35%;
+    max-width:100%;
+    height: 40em;
+    // width: 25em;
+    // margin-top: 0.5em;
+    // margin-right: 0.5em;
+    border-radius: 5px;
+}
+
+.avondalePanels {
+    color:black;
+}
+
+#avondaleMapContainer {
+    width: 47.75em;
+    border-radius: 5px;
+    background-color: #6A7073;
+    // margin-left: 2.20em;
+    margin-top: 0.5em;
+    // margin-right: 0.65em;
+    padding-bottom: 0.5em;
 }
 // End of Avondale
 
@@ -260,6 +308,7 @@ p {
     text-align: center;
     font-family: Fjalla-One;
     font-weight: 400;
+}
 
 .contentTitles {
     font-family: Lora;
@@ -268,9 +317,9 @@ p {
     color: #EBF2EB;
 }
 
-.brewList {
-    margin-right: .5em;
-}
+// .brewList {
+//     margin-right: .5em;
+// }
 
 // Cahaba Brewing
 
@@ -357,6 +406,10 @@ p {
     margin-left: 2%;
 }
 
+#cahabaMapContent {
+        padding-left: 6.5%;
+    }
+
 #cahabaMapContainer {
     width: 46.5em;
     border-radius: 5px;
@@ -374,6 +427,10 @@ p {
     height: 19.5em;
     // margin-left: 2em;
 }
+
+#cahabaSocialContent {
+        padding-left: 7.5%;
+    }
 
 #cahabaSocialEvents {
     width: 49.8em;
@@ -428,9 +485,7 @@ p {
         margin-top: 11%
     }
     
-    #cahabaContent {
-        padding-left: 12%;
-    }
+    
     
     #cahabaSocialEvents {
         width: 24.3em;
@@ -449,6 +504,8 @@ p {
         height:30em;
         margin-left: 0;
     }
+    
+    
     
     #cahabaMapContainer {
         width: 24.5em;
@@ -510,4 +567,3 @@ p {
     // margin-right: 0.65em;
     padding-bottom: 0.5em;
 }
-

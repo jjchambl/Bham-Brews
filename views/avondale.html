@@ -1,47 +1,53 @@
 <div class="avondale">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 avondaleBackground">
-                <a href="www.avondalebrewing.com"><img src="/Brewery-pics/darkgreenelephant.svg" alt="" class="avondaleLogoImg"></a>
+            <div class="avondaleBackground">
+                <a href="www.avondalebrewing.com"><img src="/Brewery-pics/darkgreenelephant.svg" alt="" class=" col-md-3 avondaleLogoImg"></a>
+                <a href="www.avondalebrewing.com"><img src="/Brewery-pics/logo-mobile.svg" alt="" class="col-md-9 avondaleLogoImg2"></a>
             </div>
-        </div> 
+        </div>
         <div class="row">
-            <div class="col-md-4 brewInfo"><h2 class="contentTitles">BIRMINGHAM'S HISTORIC BREWERY</h2>
+            <div class="col-md-12 brewInfo avondaleInfoDiv"><h2 class="contentTitles">BIRMINGHAM'S HISTORIC BREWERY</h2>
                 There's nothing better than good stories told over great beer. That's why at Avondale Brewing Company we've named all of our beers after the folklore of Avondale, Alabama. We craft our brews with the same unique character and style as the stories they are named after. A collaboration between Coby and Hunter Lake, Avondale Brewery is a locally owned and operated brewery in the heart of the Deep South.
             </div>
-            <div class="col-md-4 brewList brewInfo"><h2 class="contentTitles">BEER LIST HERE</h2>
-                Some more content blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                blah blah blah blah blah bh blah blah blah blah blah blahblah blah blah blah blah blah blah
-                blah blah blah blah blah blah blahvblah blah blah blah blah blah blahblah blah blah blah blah blah blah
+        </div>
+        <div class="row">
+            <div class="col-md-12 avondaleArt"></div> 
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3" ng-repeat='beer in beers | limitTo: 8'>
+                <div class="panel beer-panel avondalePanels">
+                    <div class="head"><h3>{{beer.beer.beer_name}}</h3></div>
+                    <hr>
+                    <div class="row panel-body">
+                        <div class="col-xs-4"><img src="{{beer.beer.beer_label}}" alt="Beer Image"></div>
+                        <div class="col-xs-8"><p>Style: {{beer.beer.beer_style}}</p></div>
+                        <div class="col-xs-8"><p>abv: {{beer.beer.beer_abv}}</p></div>
+                        <div class="col-xs-12">
+                            <span><strong>Rating:</strong> <small>{{beer.beer.rating_score}}</small></span><span><strong>  Votes: </strong><small>{{beer.beer.rating_count}}</small></span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 brewInfo"><h2 class="contentTitles">UNTAPPED RATINGS HERE</h2>
-                Even more content blah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                blah blah blah blah blah blah blahblah blah blah blah blah blah
+        </div>
+        <div class="row">
+            <div class="col-md-7 avondaleMapContainer">
+                <div class="maps">
+                    <ng-map center="33.5245,-86.7742" zoom="10">
+                        <marker position="33.5245,-86.7742" title="Avondale Brewery!"></marker>
+                        <directions
+                            draggable="true"
+                            panel="directions-panel"
+                            travel-mode="DRIVING"
+                            origin="current-location"
+                            destination="201 41st Street South Birmingham, AL 35222">
+                        </directions>
+                    </ng-map>
+                </div>  
+                <!--<div class="col-md-5 mapContainer" id="directions-panel"></div>   -->
             </div>
-        </div> 
-    </div> 
-        <!--<div class="col-md-3"><h2>Twitter feed here</h2></div>-->
-        <!--<div class="col-md-3" id="directions-panel"></div>-->
-    </div>
-    <div class="row">
-         <div class="col-md-8 mapContainer">
-            <div class="maps">
-                <ng-map center="33.5245,-86.7742" zoom="10">
-                    <marker position="33.5245,-86.7742" title="Avondale Brewery!"></marker>
-                    <directions
-                        draggable="true"
-                        panel="directions-panel"
-                        travel-mode="DRIVING"
-                        origin="current-location"
-                        destination="201 41st Street South Birmingham, AL 35222">
-                    </directions>
-                </ng-map>
-            </div>  
-            <div class="col-md-4 mapContainer" id="directions-panel"></div>   
+            <div class="col-md-5 mapContainer" id="directions-panel"></div>
         </div>
     </div>
+</div>
 
