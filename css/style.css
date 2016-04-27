@@ -250,6 +250,9 @@ p {
   margin-top: 0.5em;
   padding-bottom: 0.5em;
 }
+#trimTabInfo {
+  padding-bottom: 1em;
+}
 .brewInfo {
   background-color: #6A7073;
   color: #F9F7FA;
