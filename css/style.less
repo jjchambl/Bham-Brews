@@ -17,6 +17,10 @@ body {
 .navbar {
     text-transform: uppercase;
     font-family: @content-font;// background-color: white;
+    a {
+        color: white;
+        text-decoration: none;
+    }
 }
 .welcome {
     // height: 100%;
@@ -101,7 +105,6 @@ p {
         font-family: @title-font;
     }
     .calendar {
-        width: 75%;
         margin-left: auto;
         margin-right: auto;
         background-color: #f2f3f4;
@@ -110,6 +113,14 @@ p {
             text-transform: uppercase;
             font-size: 1.7em;
             font-weight: bold;
+            border-bottom: 1px solid black;
+        }
+        .panel-body {
+            border-bottom: 1px solid black;
+        }
+        h2 {
+            color: black;
+            font-family: @content-font;
         }
         p {
             color: black;            
@@ -117,9 +128,7 @@ p {
         }
     }
     .twitter {
-        margin-left: auto;
-        margin-right: auto;
-        width: 85%;
+        height: 50em;
     }
 }
 .footer {
@@ -257,13 +266,10 @@ p {
 
 .trimTabBackground {
     background-image: url("/Brewery-pics/trimTabCaroImg.jpg");
-    // background-size: cover;
     background-position-x: 0%;
     background-position-y: 35%;
     height: 17em;
-    // width: 25em;
     margin-top: 0.5em;
-    // margin-right: 0.5em;
     border-radius: 5px;
     text-align: right;
 }
@@ -275,8 +281,6 @@ p {
 }
 
 #trimTabTapImg {
-    // background-image: url("/Brewery-pics/tt_reserve_01.jpg");
-    // background-size: cover;
     width: 100%;
     border-radius: 5px;
 }
@@ -285,9 +289,7 @@ p {
     width: 47.75em;
     border-radius: 5px;
     background-color: #6A7073;
-    // margin-left: 2.20em;
     margin-top: 0.5em;
-    // margin-right: 0.65em;
     padding-bottom: 0.5em;
 }
 
@@ -552,13 +554,10 @@ p {
 
 .goodPeopleBackground {
     background-image: url("/Brewery-pics/goodPeopleCaroImg.jpg");
-    // background-size: cover;
     background-position-x: 0%;
     background-position-y: 25%;
     height: 17em;
-    // width: 25em;
     margin-top: 0.5em;
-    // margin-right: 0.5em;
     border-radius: 5px;
     text-align: left;
 }
@@ -570,8 +569,6 @@ p {
 }
 
 #goodPeopleTapImg {
-    // background-image: url("/Brewery-pics/tt_reserve_01.jpg");
-    // background-size: cover;
     width: 100%;
     border-radius: 5px;
 }
@@ -584,9 +581,7 @@ p {
     width: 47.75em;
     border-radius: 5px;
     background-color: #6A7073;
-    // margin-left: 2.20em;
     margin-top: 0.5em;
-    // margin-right: 0.65em;
     padding-bottom: 0.5em;
 }
 

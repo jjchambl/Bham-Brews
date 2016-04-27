@@ -30,8 +30,7 @@ function WelcomeController($scope, $http, goodFactory) {
         $http.get('https://services.platypi.io/api/v1/events/', config).success(function(data) {
             console.log(data.data);
             var avEvents = data.data;
-            $scope.events.push(avEvents);
-            // events.push(avEvents);
+            $scope.avEvents = avEvents;
         }, function (err) {
             console.log(err);
         });
@@ -64,5 +63,5 @@ function WelcomeController($scope, $http, goodFactory) {
     
     // $scope.init = scroll();
     $scope.init = getGoodCalendar();
-    // $scope.init = getAvondaleCalendar();
+    $scope.init = getAvondaleCalendar();
 }

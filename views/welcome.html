@@ -89,22 +89,31 @@
     
 <!--<div class="space"></div>-->
 <div class="social">
-    <h2>Social Events and Calendar!</h2>
+    <h2>What's Happening</h2>
     <div class="row">
         <div class="col-md-6">
             <div class="panel calendar">
-                <div class="panel-heading">Calendar of Events</div>
-                <hr>
-                <div class="panel-body" ng-repeat='event in goodEvents'>
-                    <p><strong>{{event.date}}</strong></p>
-                    <p><strong>Drinks</strong></p>
-                    <p>somewhere, AL</p>
-                </div>            
+                <div class="panel-heading">Calendar</div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Good People Events</h2>
+                        <div class="panel-body" ng-repeat='event in goodEvents | limitTo:6'>
+                            <p><strong><a href="{{event.short_url}}">{{event.summary}}</a></strong></p>
+                        </div>    
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Avondale Events</h2>
+                        <div class="panel-body" ng-repeat='event in avEvents | limitTo:6'>
+                            <p><strong>{{event.starttime | date: 'short'}}</strong></p>
+                            <p><strong><a href="{{event.eventlink}}">{{event.title}}</a></strong></p>
+                        </div>    
+                    </div> 
+                </div>      
             </div>
         </div>
         <div class="col-md-6">
             <div class="twitter">
-                <a class="twitter-timeline" height="400" href="https://twitter.com/Jak3C/lists/bham-brews" data-widget-id="724628247011577857">Tweets from https://twitter.com/Jak3C/lists/bham-brews</a>
+                <a class="twitter-timeline" height="900" href="https://twitter.com/Jak3C/lists/bham-brews" data-widget-id="724628247011577857">Tweets from https://twitter.com/Jak3C/lists/bham-brews</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
         </div>
