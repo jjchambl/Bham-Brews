@@ -281,7 +281,7 @@ p {
 #logoBackground {
   background-image: url("/Brewery-pics/cahabaBrewBackgroundImg.jpg");
   background-size: cover;
-  height: 17em;
+  height: 25em;
   margin-top: 0.5em;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -291,6 +291,7 @@ p {
   height: 10em;
   padding-left: 29em;
   max-width: 100%;
+  margin-top: 6.5%;
 }
 #cahabaTweets {
   width: 47.8em;
@@ -343,9 +344,9 @@ p {
 }
 @media screen and (max-width: 768px) {
   #cahabaImg {
-    padding-left: 40%;
+    padding-left: 0%;
     padding-top: 5%;
-    margin-top: 11%;
+    margin-top: 35%;
   }
   #cahabaSocialEvents {
     width: 24.3em;
