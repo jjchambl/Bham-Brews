@@ -267,7 +267,7 @@ p {
     border-radius: 5px;
 }
 
-.trimTabMapContainer {
+#trimTabMapContainer {
     width: 47.75em;
     border-radius: 5px;
     background-color: #6A7073;
@@ -512,8 +512,22 @@ p {
     
     #directions-panel {
         width: 24.5em;
+        margin-top: 0.5em;
         // margin-left: 7%;
         
+    }
+    
+    #trimTabMapContainer {
+        width: 24.5em;
+        padding-top: 0.2em;
+        // margin: auto;
+        margin-top: 0.5em;
+        padding-left: 6.5%;
+    }
+    
+    .ttdp {
+        padding-left: 6.5%;
+        padding-top: 0.5em;
     }
 }
 
@@ -555,7 +569,7 @@ p {
     border-radius: 5px;
 }
 
-.goodPeopleMapContainer {
+#goodPeopleMapContainer {
     width: 47.75em;
     border-radius: 5px;
     background-color: #6A7073;
@@ -563,4 +577,20 @@ p {
     margin-top: 0.5em;
     // margin-right: 0.65em;
     padding-bottom: 0.5em;
+}
+
+@media screen and (max-width: 768px) {
+     #goodPeopleMapContainer {
+        width: 24.5em;
+        padding-top: 0.2em;
+        margin-top: 0.5em;
+        margin: auto;
+        // padding-left: 6.5%;
+    }
+      
+    .ggdp {
+        padding-left: 6.5%;
+        padding-top: 0.5em;
+        margin: auto;
+    }
 }
