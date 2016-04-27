@@ -191,12 +191,10 @@ p {
   border-radius: 5px;
 }
 .avondaleSocial {
-  height: 10em;
-  width: 15em;
+  height: auto;
+  width: auto;
   max-width: 100%;
   cursor: pointer;
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
 .avondaleArt {
   background-image: url("/Brewery-pics/ourstoryhero.jpg");
