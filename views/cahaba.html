@@ -1,20 +1,10 @@
 <div class="cahaba">
-    <!--<div class="col-xs-12 hidden-md visible-xs cahabaPhotos">
-        <img src="/Brewery-pics/CahabaBrewSocialEvents.jpg" alt="Cahaba Social Event" class="cahabaSlides">
-        <img src="/Brewery-pics/cahabaBrewBeerImg.png" alt="Bahaba Brews" class="cahabaSlides">
-        <img src="/Brewery-pics/cahabaBrewBackgroundImg.jpg" alt="Twitter brew tops" class="cahabaSlides">
-    </div>-->
         <div id="imgContainer">
             <div id="logoBackground"><img id="cahabaImg" src="//static1.squarespace.com/static/5357ef4de4b08e71d01a71c2/t/53629effe4b01d33ffb006f0/1460565595048/" alt="Cahaba Brewing"></div>
         </div>
     
-    <!--<div class="col-xs-12 hidden-md visible-xs cahabaPhotos">
-        <img src="/Brewery-pics/CahabaBrewSocialEvents.jpg" alt="Cahaba Social Event" class="cahabaSlides">
-        <img src="/Brewery-pics/cahabaBrewBeerImg.png" alt="Bahaba Brews" class="cahabaSlides">
-        <img src="/Brewery-pics/cahabaBrewBackgroundImg.jpg" alt="Twitter brew tops" class="cahabaSlides">
-    </div>-->
-    <div id="cahabaContent">
-        <div id="cahabaSocialContent">
+    <div id="cahabaSocialContent">
+        <div class="container">
             <div class="row">
                 <div id="socialImg" class="col-md-3 hidden-sm visible-md visible-lg"><img id="cahabaSocial" src="/Brewery-pics/cahabaBrewSocialEvent.gif" alt="Cahaba Brew Social Events"></div>
                 <div id="cahabaSocialEvents" class="col-md-9 cahabaBrewInfo"><h2 class="contentTitles">CONTENT AND SOCIAL LINKS AND STUFF HERE</h2>
@@ -30,54 +20,29 @@
                 </div>
             </div>
         </div>
-            <!--<div class="col-md-3 mapContainer">
-                <div class="maps">
-                    <ng-map center="33.5275183,-86.7654226" zoom="8">
-                        <marker position="33.5275183,-86.7654226" title="Cahaba Brewery!"></marker>
-                        <directions
-                        draggable="true"
-                        panel="directions-panel"
-                        travel-mode="DRIVING"
-                        origin="current-location"
-                        destination="4500 5th Ave South Building C Birmingham, Alabama 35222">
-                        </directions>
-                    </ng-map>
-                    <div class="mapContainer" id="directions-panel"></div>
-                </div>
-            </div>-->
-        <div id="cahabaBrewContent">
+      </div>
+        
+        
+        <div class="container">
             <div class="row">
-                <!--<div class="col-md-4"><img id="cahabaBeers" src="Brewery-pics/cahabaBrewBeerImg.png" alt=""></div>-->
-                <div id="cahabaBrewList" class="col-md-8 cahabaBrewInfo"><h2 class="contentTitles">BEER LIST HERE</h2>
-                    <!--Some more content blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                    blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                    blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                    blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                    blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                    blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                    blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                    blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                    blah blah blah blah blah blah blahvblah blah blah blah blah blah blahblah blah blah blah blah blah blah-->
-                    {{rating}}
+                <div class="col-sm-6 col-md-4 col-lg-3" ng-repeat='beer in beers | limitTo: 8'>
+                    <div class="panel beer-panel">
+                        <div class="head"><h3>{{beer.beer.beer_name}}</h3></div>
+                        <hr>
+                        <div class="row panel-body">
+                            <div class="col-xs-4"><img src="{{beer.beer.beer_label}}" alt="Beer Image"></div>
+                            <div class="col-xs-8"><p>Style: {{beer.beer.beer_style}}</p></div>
+                            <div class="col-xs-8"><p>abv: {{beer.beer.beer_abv}}</p></div>
+                            <div class="col-xs-12">
+                            <span><strong>Rating:</strong> <small>{{beer.beer.rating_score}}</small></span><span><strong>  Votes: </strong><small>{{beer.beer.rating_count}}</small></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4 hidden-sm visible-md visible-lg"><img id="cahabaBeers" src="Brewery-pics/cahabaBrewBeerImg.png" alt="Cahaba Beer Img"></div>
             </div>
-        </div>
-        <!--<div class="row">
-            <div class="col-md-3"><img id="cahabaUntappdImg" src="/Brewery-pics/untappdImg.png" alt="untappd Img"></div>
-            <div id="cahabaUntappd" class="col-md-9 cahabaBrewInfo"><h2 class="contentTitles">UNTAPPED RATINGS HERE</h2>
-                Even more content blah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                blah blah blah blah blah blah blahvblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-                blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah
-            </div>
-        </div>-->
-        <div id="cahabaTweetContent">
+        </div>  
+       
+       <!--<div id="cahabaTweetContent">
             <div class="row">
                 <div id="cahabaTwitter" class="col-md-4 hidden-sm visible-md visible-lg"><img id="twitterT" src="Brewery-pics/twitter-symbol.jpg" alt=""></div>
                 <div id="cahabaTweets" class="col-md-8 cahabaBrewInfo"><h2 class="contentTitles">EMBEDDED TWEETS</h2>
@@ -91,31 +56,29 @@
                     blah blah blah blah blah blah blahvblah blah blah blah blah blah blahblah blah blah blah blah blah blah
                     blah blah blah blah blah blah blahblah blah blah blah blah blah blahblah blah blah blah blah blah blah 
                 </div>
-                <!--<div id="cahabaTwitter" class="col-md-4"><img id="twitterT" src="Brewery-pics/twitter-symbol.jpg" alt=""></div>-->
             </div>
-        </div>
+        </div>-->
         
         <div id="cahabaMapContent">
-            <div class="row">
-                <div id="cahabaMapContainer" class="col-md-8">
-                    <div class="maps">
-                        <ng-map center="33.5275183,-86.7654226" zoom="8">
-                            <marker position="33.5275183,-86.7654226" title="Cahaba Brewery!"></marker>
-                            <directions
-                            draggable="true"
-                            panel="directions-panel"
-                            travel-mode="DRIVING"
-                            origin="current-location"
-                            destination="4500 5th Ave South Building C Birmingham, Alabama 35222">
-                            </directions>
-                        </ng-map>
-                        <!--<div class="mapContainer" id="directions-panel"></div>-->
+            <div class="container">
+                <div class="row">
+                    <div id="cahabaMapContainer" class="col-md-8">
+                        <div class="maps">
+                            <ng-map center="33.5275183,-86.7654226" zoom="8">
+                                <marker position="33.5275183,-86.7654226" title="Cahaba Brewery!"></marker>
+                                <directions
+                                draggable="true"
+                                panel="directions-panel"
+                                travel-mode="DRIVING"
+                                origin="current-location"
+                                destination="4500 5th Ave South Building C Birmingham, Alabama 35222">
+                                </directions>
+                            </ng-map>
+                        </div>
                     </div>
+                    <div class="col-md-4 mapContainer" id="directions-panel"></div>
                 </div>
-                <div class="col-md-4 mapContainer" id="directions-panel"></div>
             </div>
         </div>
-    </div>
 </div>
 
-<!--<img src="//static1.squarespace.com/static/5357ef4de4b08e71d01a71c2/t/53629effe4b01d33ffb006f0/1460565595048/?format=1500w" alt="Cahaba Brewing">-->

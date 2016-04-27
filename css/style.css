@@ -250,9 +250,6 @@ p {
   font-style: italic;
   color: #EBF2EB;
 }
-.brewList {
-  margin-right: .5em;
-}
 .cahaba {
   margin-top: 3.65em;
 }
@@ -300,6 +297,9 @@ p {
   height: 18em;
   margin-left: 2%;
 }
+#cahabaMapContent {
+  padding-left: 6.5%;
+}
 #cahabaMapContainer {
   width: 46.5em;
   border-radius: 5px;
@@ -313,6 +313,9 @@ p {
   border-radius: 5px;
   margin-top: 0.5em;
   height: 19.5em;
+}
+#cahabaSocialContent {
+  padding-left: 7.5%;
 }
 #cahabaSocialEvents {
   width: 49.8em;
@@ -343,9 +346,6 @@ p {
     padding-left: 40%;
     padding-top: 5%;
     margin-top: 11%;
-  }
-  #cahabaContent {
-    padding-left: 12%;
   }
   #cahabaSocialEvents {
     width: 24.3em;

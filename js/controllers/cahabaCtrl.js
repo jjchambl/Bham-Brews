@@ -8,28 +8,14 @@ CahabaController.$inject = ["$scope", "$http"];
 
 // implementing the dependencies
 function CahabaController($scope, $http) {
-    // var vm = this;
-    // vm.init = init;
-    // vm.untappdRating = untappdRating;
+    // $scope.googleMapsUrl="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm0HxIqsKb8xK49IOV8uGIUWcTbCeSs2E";
     
-    // function init() {
-    //     untappdRating();
-    // }
-    
-    // var myIndex = 0;
-    //     carousel();
-
-    // function carousel() {
-    // var i;
-    // var x = document.getElementsByClassName("cahabaSlides");
-    //     for (i = 0; i < x.length; i++) {
-    //         x[i].style.display = "none";  
-    //     }
-    // myIndex++;
-    //     if (myIndex > x.length) {myIndex = 1}    
-    //          x[myIndex-1].style.display = "block";  
-    //          setTimeout(carousel, 2000); // Change image every 2 seconds
-    //     }
-
-
+    var getBrews = function() {
+        $http.get('https://api.untappd.com/v4/brewery/info/30313/GET?client_id=DBC75E152A90C85FFFDD9562522B89649EAF6252&client_secret=778095373400201EB85CE2084B4829C6C454A7DB').success(function(data) {
+            console.log(data.response.brewery.beer_list.items);
+            var beerList = data.response.brewery.beer_list.items;
+            $scope.beers = beerList;
+        })
+    }
+    $scope.init = getBrews (); 
 }
