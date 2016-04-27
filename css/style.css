@@ -370,16 +370,6 @@ p {
     width: 24.5em;
     margin-top: 0.5em;
   }
-  #trimTabMapContainer {
-    width: 24.5em;
-    padding-top: 0.2em;
-    margin-top: 0.5em;
-    padding-left: 6.5%;
-  }
-  .ttdp {
-    padding-left: 6.5%;
-    padding-top: 0.5em;
-  }
 }
 .goodPeople {
   margin-top: 3.5em;
@@ -421,6 +411,21 @@ p {
     margin: auto;
   }
   .ggdp {
+    padding-left: 6.5%;
+    padding-top: 0.5em;
+    margin: auto;
+  }
+  .trimTabBackground {
+    text-align: center;
+  }
+  #trimTabMapContainer {
+    width: 24.5em;
+    padding-top: 0.2em;
+    margin: auto;
+    margin-top: 0.5em;
+    padding-left: 6.5%;
+  }
+  .ttdp {
     padding-left: 6.5%;
     padding-top: 0.5em;
     margin: auto;
