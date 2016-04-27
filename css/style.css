@@ -190,6 +190,12 @@ p {
   .avondaleMapContainer {
     width: 24.5em;
     padding-top: 0.2em;
+    margin: auto;
+    margin-top: 0.5em;
+  }
+  .avondaleDirectionPanel {
+    padding-top: 0.5em;
+    margin: auto;
   }
 }
 .trimTab {
