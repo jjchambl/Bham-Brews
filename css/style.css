@@ -240,6 +240,7 @@ p {
   margin: 0.5em;
   max-width: 100%;
   padding-right: 5%;
+  padding-top: 3.5em;
 }
 .trimTabBackground {
   background-image: url("/Brewery-pics/trimTabCaroImg.jpg");
@@ -411,12 +412,13 @@ p {
 .goodPeopleImg {
   margin: 0.5em;
   max-width: 100%;
+  padding-top: 3.5em;
 }
 .goodPeopleBackground {
   background-image: url("/Brewery-pics/goodPeopleCaroImg.jpg");
   background-position-x: 0%;
   background-position-y: 25%;
-  height: 17em;
+  height: 25em;
   margin-top: 0.5em;
   border-radius: 5px;
   text-align: left;
@@ -441,6 +443,10 @@ p {
   padding-bottom: 0.5em;
 }
 @media screen and (max-width: 768px) {
+  .goodPeopleBackground {
+    text-align: center;
+    background-position-x: 30%;
+  }
   #goodPeopleMapContainer {
     width: 24.5em;
     padding-top: 0.2em;
