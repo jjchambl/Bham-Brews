@@ -6,7 +6,20 @@ WelcomeController.$inject = ["$scope", "$http", 'goodFactory'];
 
 function WelcomeController($scope, $http, goodFactory) {
     
-    $scope.beers = [];
+    $scope.beers = [];    
+    
+    // var scroll = function() {
+    //     $(window).scroll(function() {
+    //         alert('you scrolled');
+    //         if (this.scrollTop === 100) {
+    //             console.log('you scrolled');
+    //             $("#wrap").addClass("fixed");
+    //         } 
+    //         else {
+    //             $(document).removeClass("fixed");
+    //         }
+    //     })
+    // }
     
     var config = {headers: {Filter: 9993770}};
     
@@ -28,8 +41,7 @@ function WelcomeController($scope, $http, goodFactory) {
         $http.jsonp('http://api.tumblr.com/v2/blog/goodpeopleevents.tumblr.com/posts?callback=JSON_CALLBACK&api_key=I8vzOElWPL30QJgSCWH8aFTAySclmj4DRGu5JzavJOzWJm8FqM&tag=events&limit=10&_=1461703849658').success(function(data) {
             console.log(data.response.posts);
             var goodEvents = data.response.posts;
-            $scope.events.push(goodEvents);
-            // events.push(goodEvents);
+            $scope.goodEvents = goodEvents;
         });
     }
     
@@ -50,6 +62,7 @@ function WelcomeController($scope, $http, goodFactory) {
         console.log($scope.events);
     }
     
+    // $scope.init = scroll();
     $scope.init = getGoodCalendar();
-    $scope.init = getAvondaleCalendar();
+    // $scope.init = getAvondaleCalendar();
 }
