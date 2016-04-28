@@ -196,7 +196,7 @@ p {
   color: #EBF2EB;
 }
 .avondale {
-  margin-top: 3.5em;
+  margin-top: 2.5em;
 }
 .avondaleLogoImg {
   height: 18em;
@@ -218,8 +218,16 @@ p {
   border-radius: 5px;
   padding-top: 3.5em;
 }
-.avondaleSocial {
-  height: auto;
+.avondaleFacebook {
+  height: 6em;
+  width: auto;
+  max-width: 100%;
+  cursor: pointer;
+  margin-top: 2em;
+  margin-left: 2em;
+}
+.avondaleTwitter {
+  height: 10em;
   width: auto;
   max-width: 100%;
   cursor: pointer;
