@@ -29,16 +29,19 @@ p {
     color: #f1f1f1;
 }
 .bhamHeadImg {
+    position: relative;
     text-align: center;
     padding-top: 0;
     margin-top: 0;
-    background-image: url('/Bham-pics/BirminghamALskyline_2_curtispalmer.jpg');
+    background-image: url('/Bham-pics/Birmingham_Skyline_1.jpeg');
     height: 35em;
     max-width: 100%;
     background-size:cover;
-    background-position-x: center;
+    background-position: center;
+    // background-position-y: ;
     h1 {
-        font-family: 'Goudy Bookletter 1911', serif;
+        font-family: @title-font;
+        text-transform: uppercase;
         font-size: 6em;
         color: white;
         text-align: center;
@@ -46,8 +49,15 @@ p {
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: black;
     }
+    .caption {
+        padding: 0 3px 0 0;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
 }
 .intro {
+    padding: 2em 1em;
     background-color: @green-background;
     text-align: center;
     // border-bottom: 2px solid gray;
@@ -59,18 +69,22 @@ p {
     .info-button {
         padding: 2em 0;
         a {
+            background-color: black;
+            color: white;
             position: relative;
             font-family: @title-font;
             text-transform: uppercase;
             padding: @button-height * .3 @button-width * .3;
-            background-color: @light-background;
-            color: black;
             text-decoration: none;
             border-radius: @button-border-radius;
             &:hover {
-                background-color: darken(@light-background, 15%);
+                background-color: lighten(black, 25%);
             }
         }
+    }
+    .twitter {    
+        padding-top: 1em;
+        text-align: center;
     }
 }
 .space {
@@ -80,14 +94,18 @@ p {
 .social {
     text-align: center;
     // background-color: #94d4af;
-    h2 {
+    h1 {
         color: white;
         font-family: @title-font;
+        padding-bottom: 1em;
     }
     .calendar {
+        width: 75%;
         margin-left: auto;
         margin-right: auto;
         background-color: #f2f3f4;
+        height: 600px;
+        overflow-y: scroll;
         .panel-heading {
             font-family: 'Goudy Bookletter 1911', serif;
             text-transform: uppercase;
@@ -107,16 +125,25 @@ p {
             padding: .5em 0;
         }
     }
-    .twitter {
-        height: 50em;
-    }
 }
 .footer {
+    text-align: center;
     border-top: 1px solid gray;
     background-color: black;
+    color: white;
+    .middle {
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+    }
+    div {
+        padding: .5em;
+    }
     p {
         font-family: 'Times New Roman', Times, serif;
         font-size: .8em;
+    }
+    img {
+        height: 2em;
     }
 }
 .carousel {
@@ -138,37 +165,55 @@ p {
 }
 
 // Maps
+// Contorls the maps on All Views
 .maps {
     height: auto;
     width: auto;
-    // display: inline-table;
     margin-top:.5em;
 }
-
-// .mapContainer {
-//     display: inline-flex;
-// }
-
+// Controls the directions on All Views
 #directions-panel {
     height: 100%; 
     overflow: auto;
     width: 30em;
     background-color: #6A7073;
     border-radius: 5px;
-    // margin-left: 0.5em;
     margin-top: 0.5em; 
 }
 // End of Maps
+
+// Brew Pages Start
+
+// Global Content Styles
+.brewInfo {
+    background-color: #6A7073;
+    color: #F9F7FA;
+    border-radius: 6px;
+    margin-top: 0.5em;
+    text-align: center;
+    font-family: @content-font;
+    font-weight: 400;
+}
+
+
+
+.contentTitles {
+    font-family: @title-font;
+    font-weight: bold;
+    font-style: italic;
+    color: #EBF2EB;
+}
+// End of Global Content Styles
 
 // Avondale Brewery
 .avondale {
     margin-top:3.5em;
 }
 .avondaleLogoImg {
-    height:14em;
+    height:18em;
     max-width: 100%;
     cursor:pointer;
-    margin-top:1em;
+    // margin-bottom:5em;
 }
 .avondaleLogoImg2 {
     height:14em;
@@ -180,9 +225,10 @@ p {
     background-color:black;
     background-size: cover;
     max-width:100%;
-    height: 17em;
+    height: 25em;
     margin-top: 0.5em;
     border-radius: 5px;
+    padding-top:3.5em;
 }
 .avondaleSocial {
     height:auto;
@@ -279,7 +325,6 @@ p {
 }
 // End of Trim Tab
 
-// Brew Pages
 // .avondaleRoomDiv {
 //     height: 17em;
 //     margin-top: 0.5em;
@@ -297,227 +342,93 @@ p {
 //     font-weight: 400;
 // }
 
-
-// Global Content Styles
-.brewInfo {
-    background-color: #6A7073;
-    color: #F9F7FA;
-    border-radius: 6px;
-    margin-top: 0.5em;
-    // margin-left: 1.5em;
-    text-align: center;
-    font-family: Fjalla-One;
-    font-weight: 400;
-}
-
-.contentTitles {
-    font-family: Lora;
-    font-weight: bold;
-    font-style: italic;
-    color: #EBF2EB;
-}
-
-// .brewList {
-//     margin-right: .5em;
-// }
-
 // Cahaba Brewing
-
+// Controls the whole Cahaba Brewery View
 .cahaba {
     margin-top: 3.65em;
 }
-
-// .cahabaSlides {
-//     display: none;
-//     width: 50em;
-// }
-
-// #cahabaSocialContent {
-// }
-
-// #cahabaBrewContent {
-    
-// }
-
-// #cahabaTweetContent {
-    
-// }
-
-// #cahabaMapContent {
-    
-// }
-
-#cahabaContent {
-    padding-left: 8.5%;
-}
-
-#cahabaBrewList {
-    // margin-left: 3em;
-    margin-right: 1em;
-    width: 49.8em;
-    height: 17.20em;
-}
-
-#cahabaBeers {
-    width: 26em;
-    margin-top: 0.5em;
-    border-radius: 5px;
-}
-
-.cahabaBrewInfo {
-    background-color: #6A7073;
-    color: #F9F7FA;
-    border-radius: 6px;
-    margin-top: 0.5em;
-    // margin-left: 1.5em;
-    text-align: center;
-    font-family: Fjalla-One;
-    font-weight: 400;
-}
-
+// Controls the Header of the Cahaba Brewery View
 #imgContainer {
     text-align: center;
 }
-
+// Background Image for Header
 #logoBackground {
-    background-image: url("/Brewery-pics/cahabaBrewBackgroundImg.jpg");
+    background-image: url("/Brewery-pics/cahabaBrewBeerImg.png");
     background-size: cover;
-    // background-position-x: 45%;
-    // background-position-y: 56%;
-    height: 17em;
-    // width: 25em;
+    background-position-x: center;
+    background-position-y: 8%;
+    height: 39em;
     margin-top: 0.5em;
-    // margin-right: 0.5em;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-
+// Logo for Cahaba Brewery
 #cahabaImg {
     
     width: auto;
     height:10em;
-    padding-left: 29em;
+    padding-left: 46em;
     max-width: 100%;
+    margin-top: 8.5%;
 }
-
-#cahabaTweets {
-    width: 47.8em;
-    height: 18em;
-    margin-left: 2%;
-}
-
+// Controls the Map and Directions Panel
 #cahabaMapContent {
         padding-left: 6.5%;
     }
-
+// Controls the Map
 #cahabaMapContainer {
     width: 46.5em;
     border-radius: 5px;
     background-color: #6A7073;
-    // margin-left: 3.8em;
     margin-top: 0.5em;
     margin-right: 1.4em;
     padding-bottom: 0.5em;
 }
-
+// Controls Cahaba Tap Room Image in DskTop View
 #cahabaSocial {
     width: 26em;
     border-radius: 5px;
     margin-top: 0.5em;
     height: 19.5em;
-    // margin-left: 2em;
 }
-
+// Controls Tap Room Image and Brewery Info 
 #cahabaSocialContent {
         padding-left: 7.5%;
     }
-
+// Controls the div of Jump On In
 #cahabaSocialEvents {
     width: 49.8em;
     height: 19.48em;
     margin-left: 7.5%;
 }
-
+// Removes the bootstrap default padding
 #socialImg {
     padding-left: 0;
     padding-right: 0;
 }
 
-// #cahabaUntappd {
-//     width: 60.75em;
-// }
-
-// #cahabaUntappdImg {
-//     width: 15em;
-// }
-
-// #cahabaTweets {
-//     width: 50.5em;
-//     height: 17em;
-//     margin-left: 1em;
-// }
-
-#cahabaTwitter {
-    background-image: url("/Brewery-pics/beer-tops-twitter-background.jpg");
-    background-size: cover;
-    // background-position-x: 45%;
-    // background-position-y: 56%;
-    height: 18em;
-    border-radius: 7px; 
-    padding-top: 5.5em;
-    margin-top: 0.5em;
-    // margin-left: 3em;
-    text-align: center;    
-}
-
-#twitterT {
-    width: 7em;
-    margin: 2px;
-    background-color: #000000;
-    border-radius: 7px;
-}
-
 // Cahaba Mobile
 @media screen and (max-width: 768px) {
     #cahabaImg {
-        padding-left: 40%;
+        padding-left: 0%;
         padding-top: 5%;
-        margin-top: 11%
+        margin-top: 35%
     }
-    
-    
-    
+// Controls Brewery Info for Mobile View 
     #cahabaSocialEvents {
         width: 24.3em;
         height: 31.48em;
         margin-left: 0;
     }
-    
-    #cahabaBrewList {
-        margin-left: 0;
-        width: 24.5em;
-        height: 17.20em;
-    }
-    
-    #cahabaTweets {
-        width:24.5em;
-        height:30em;
-        margin-left: 0;
-    }
-    
-    
-    
+//  Controls the map
     #cahabaMapContainer {
         width: 24.5em;
-        // margin-left: 6.8%;
         padding-top: 0.2em;
     }
-    
+// Controls the Directions Panel For all Maps
     #directions-panel {
         width: 24.5em;
         margin-top: 0.5em;
-        // margin-left: 7%;
-        
     }
 }
 
