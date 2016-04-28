@@ -1,5 +1,6 @@
 <div class="bhamHeadImg" id="bhamHeadImg">
     <h1>Bham Brews</h1>
+    <p class="caption"><small>Image credit: A. McAnally</small></p>
     <!--<div class="scroll">Scroll Down, pls</div>-->
 </div>
 
@@ -25,12 +26,18 @@
 <!--End of beer panels-->
 <div class="intro">
     <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
+        <div class="col-sm-6 col-sm-offset-1 col-lg-4 col-lg-offset-3">
             <p>Birmingham, Alabama, has a rich brewing history dating back to the late 19th century, but it wasn’t until 2008 that the state government fully embraced the economic possibilities that craft brewing allows. Now, 8 years later, Birmingham is home to 4 decorated craft breweries, each with its own story and culture. Bham Brews is proud to offer information on each of these businesses located in one convenient place. Whether you’re searching for products, or looking to see what events are being hosted on a given night, we’re confident you’ll find what you’re looking for here. Grab a cold pint and enjoy!  - Bham Brews Team</p>
+            <div class="info-button">
+                <a href="" ng-click="getEvents()">See News and Events</a>
+            </div>
         </div>
-    </div>
-    <div class="info-button">
-        <a href="" ng-click="getEvents()">See News and Events</a>
+        <div class="col-sm-3 col-sm-offset-1">
+            <div class="twitter">
+                <a class="twitter-timeline" height="400" width="350" href="https://twitter.com/Jak3C/lists/bham-brews" data-widget-id="724628247011577857">Tweets from https://twitter.com/Jak3C/lists/bham-brews</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>            
+        </div>
     </div>
 </div>
     
@@ -45,24 +52,40 @@
             <li data-target="#brewCarousel" data-slide-to="1"></li>
             <li data-target="#brewCarousel" data-slide-to="2"></li>
             <li data-target="#brewCarousel" data-slide-to="3"></li>
-            <li data-target="#brewCarousel" data-slide-to="4"></li>
-            <li data-target="#brewCarousel" data-slide-to="5"></li>
-            <li data-target="#brewCarousel" data-slide-to="6"></li>
-            <li data-target="#brewCarousel" data-slide-to="7"></li>
         </ol>
         <div class="carousel-inner">
             <div class="item active">
-                <img src="Brewery-pics/goodPeopleCaroImg.jpg" alt="">                  
+                <a href="#goodppl">
+                    <img src="Brewery-pics/goodPeopleCaroImg.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>Good People Brewing Co.</h2>
+                    </div>
+                </a>                  
+            </div>           
+            <div class="item">
+                <a href="#avondale">
+                    <img src="Brewery-pics/avondaleCaroImg.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>Avondale Brewing Co.</h2>
+                    </div>
+                </a>
+            </div>           
+            <div class="item">
+                <a href="#trimtab">
+                    <img src="Brewery-pics/trimTabCaroImg.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>TribTab Brewing Co.</h2>
+                    </div>
+                </a>
             </div>
             <div class="item">
-                <img src="Brewery-pics/avondaleCaroImg.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="Brewery-pics/trimTabCaroImg.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="Brewery-pics/avondaleBackground.png" alt="">
-            </div>
+                <a href="#cahaba">
+                    <img src="Brewery-pics/cahabaBrewBeerImg.png" alt="">
+                    <div class="carousel-caption">
+                        <h2>Cahaba Brewing Co.</h2>
+                    </div>
+                </a>
+            </div>           
         </div>    
 
     </div> 
@@ -77,33 +100,25 @@
     
 <!--<div class="space"></div>-->
 <div class="social">
-    <h2>What's Happening</h2>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="panel calendar">
-                <div class="panel-heading">Calendar</div>
-                <div class="row">
+    <h1>What's Happening</h1>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel calendar">
+                    <div class="panel-heading">Calendar</div>
                     <div class="col-sm-6">
-                        <h2>Good People Events</h2>
-                        <div class="panel-body" ng-repeat='event in goodEvents | limitTo:6'>
-                            <p><strong><a href="{{event.short_url}}">{{event.summary}}</a></strong></p>
-                        </div>    
+                            <h2>Good People Events</h2>
+                            <div class="panel-body" ng-repeat='event in goodEvents | limitTo:6'>
+                                <p><strong><a href="{{event.short_url}}">{{event.summary}}</a></strong></p>
+                            </div>
                     </div>
                     <div class="col-sm-6">
-                        <h2>Avondale Events</h2>
-                        <div class="panel-body" ng-repeat='event in avEvents | limitTo:6'>
-                            <p><strong>{{event.starttime | date: 'short'}}</strong></p>
-                            <p><strong><a href="{{event.eventlink}}">{{event.title}}</a></strong></p>
-                        </div>    
-                    </div> 
-                </div>      
+                            <h2>Avondale Events</h2>
+                            <div class="panel-body" ng-repeat='event in avEvents | limitTo:6'>
+                                <p><strong>{{event.starttime | date: 'short'}}</strong></p>
+                                <p><strong><a href="{{event.eventlink}}">{{event.title}}</a></strong></p>
+                            </div>
+                    </div>    
+                </div>
             </div>
-        </div>
-        <div class="col-md-6">
-            <div class="twitter">
-                <a class="twitter-timeline" height="900" href="https://twitter.com/Jak3C/lists/bham-brews" data-widget-id="724628247011577857">Tweets from https://twitter.com/Jak3C/lists/bham-brews</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </div>
-        </div>
-    </div>
+        </div>            
 </div>
