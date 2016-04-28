@@ -2,6 +2,7 @@
 <html ng-app="brewApp">
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css">
         <link rel="stylesheet" href="css/style.css">
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no" ">
         
@@ -42,7 +43,13 @@
             <div ng-view></div>
             <footer class="footer">
                 <div class="container">
-                    <p>Copyright 2016, The Bham Brews Team.</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            &copy;2016, The Bham Brews Team
+                        </div>
+                        <div class="col-md-4 middle visible-desktop">Images and brewery description from Brewery Home pages</div>
+                        <div class="col-md-4"><img src="social-logos/pbu_320_white.png" alt="Powered by Untappd"></div>
+                    </div>
                 </div>
             </footer>
         </div>
