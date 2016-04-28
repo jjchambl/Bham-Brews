@@ -154,6 +154,21 @@ p {
   border-radius: 5px;
   margin-top: 0.5em;
 }
+.brewInfo {
+  background-color: #6A7073;
+  color: #F9F7FA;
+  border-radius: 6px;
+  margin-top: 0.5em;
+  text-align: center;
+  font-family: 'Raleway';
+  font-weight: 400;
+}
+.contentTitles {
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-weight: bold;
+  font-style: italic;
+  color: #EBF2EB;
+}
 .avondale {
   margin-top: 3.5em;
 }
@@ -256,52 +271,17 @@ p {
 #trimTabInfo {
   padding-bottom: 1em;
 }
-.brewInfo {
-  background-color: #6A7073;
-  color: #F9F7FA;
-  border-radius: 6px;
-  margin-top: 0.5em;
-  text-align: center;
-  font-family: Fjalla-One;
-  font-weight: 400;
-}
-.contentTitles {
-  font-family: Lora;
-  font-weight: bold;
-  font-style: italic;
-  color: #EBF2EB;
-}
 .cahaba {
   margin-top: 3.65em;
-}
-#cahabaContent {
-  padding-left: 8.5%;
-}
-#cahabaBrewList {
-  margin-right: 1em;
-  width: 49.8em;
-  height: 17.20em;
-}
-#cahabaBeers {
-  width: 26em;
-  margin-top: 0.5em;
-  border-radius: 5px;
-}
-.cahabaBrewInfo {
-  background-color: #6A7073;
-  color: #F9F7FA;
-  border-radius: 6px;
-  margin-top: 0.5em;
-  text-align: center;
-  font-family: Fjalla-One;
-  font-weight: 400;
 }
 #imgContainer {
   text-align: center;
 }
 #logoBackground {
-  background-image: url("/Brewery-pics/cahabaBrewBackgroundImg.jpg");
+  background-image: url("/Brewery-pics/cahabaBrewBeerImg.png");
   background-size: cover;
+  background-position-x: center;
+  background-position-y: 8%;
   height: 25em;
   margin-top: 0.5em;
   border-bottom-left-radius: 5px;
@@ -310,14 +290,9 @@ p {
 #cahabaImg {
   width: auto;
   height: 10em;
-  padding-left: 29em;
+  padding-left: 49em;
   max-width: 100%;
-  margin-top: 6.5%;
-}
-#cahabaTweets {
-  width: 47.8em;
-  height: 18em;
-  margin-left: 2%;
+  margin-top: 8.5%;
 }
 #cahabaMapContent {
   padding-left: 6.5%;
@@ -348,21 +323,6 @@ p {
   padding-left: 0;
   padding-right: 0;
 }
-#cahabaTwitter {
-  background-image: url("/Brewery-pics/beer-tops-twitter-background.jpg");
-  background-size: cover;
-  height: 18em;
-  border-radius: 7px;
-  padding-top: 5.5em;
-  margin-top: 0.5em;
-  text-align: center;
-}
-#twitterT {
-  width: 7em;
-  margin: 2px;
-  background-color: #000000;
-  border-radius: 7px;
-}
 @media screen and (max-width: 768px) {
   #cahabaImg {
     padding-left: 0%;
@@ -372,16 +332,6 @@ p {
   #cahabaSocialEvents {
     width: 24.3em;
     height: 31.48em;
-    margin-left: 0;
-  }
-  #cahabaBrewList {
-    margin-left: 0;
-    width: 24.5em;
-    height: 17.20em;
-  }
-  #cahabaTweets {
-    width: 24.5em;
-    height: 30em;
     margin-left: 0;
   }
   #cahabaMapContainer {
