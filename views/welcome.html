@@ -49,6 +49,7 @@
     <!--Adjust the container class, look for others to make the image sizes consistent 
     and not have the prev and next buttons be so big when it is contained also find more
     caro images to make it bigger-->
+    <h1>The Breweries</h1>
     <div class="container">
         <ol class="carousel-indicators">
             <li class="active" data-target="#brewCarousel" data-slide-to="0"></li>
@@ -77,13 +78,13 @@
                 <a href="#trimtab">
                     <img src="Brewery-pics/trimTabCaroImg.jpg" alt="">
                     <div class="carousel-caption">
-                        <h2>TribTab Brewing Co.</h2>
+                        <h2>Trim Tab Brewing Co.</h2>
                     </div>
                 </a>
             </div>
             <div class="item">
                 <a href="#cahaba">
-                    <img src="Brewery-pics/cahabaBrewBeerImg.png" alt="">
+                    <img src="Brewery-pics/CahabaImgs/cahabaBrewBeerImg.png" alt="">
                     <div class="carousel-caption">
                         <h2>Cahaba Brewing Co.</h2>
                     </div>
@@ -104,24 +105,23 @@
 <!--<div class="space"></div>-->
 <div class="social">
     <h1>What's Happening</h1>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel calendar">
-                    <div class="panel-heading">Calendar</div>
-                    <div class="col-sm-6">
-                            <h2>Good People Events</h2>
-                            <div class="panel-body" ng-repeat='event in goodEvents | limitTo:6'>
-                                <p><strong><a href="{{event.short_url}}">{{event.summary}}</a></strong></p>
-                            </div>
-                    </div>
-                    <div class="col-sm-6">
-                            <h2>Avondale Events</h2>
-                            <div class="panel-body" ng-repeat='event in avEvents | limitTo:6'>
-                                <p><strong>{{event.starttime | date: 'short'}}</strong></p>
-                                <p><strong><a href="{{event.eventlink}}">{{event.title}}</a></strong></p>
-                            </div>
-                    </div>    
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="panel calendar">
+                <h2>Good People Events</h2>
+                <div class="panel-body" ng-repeat='event in goodEvents | limitTo:10'>
+                    <p><strong><a href="{{event.short_url}}">{{event.summary}}</a></strong></p>
                 </div>
             </div>
-        </div>            
+        </div>
+        <div class="col-sm-6"> 
+            <div class="panel calendar">
+                <h2>Avondale Events</h2>
+                <div class="panel-body" ng-repeat='event in avEvents | limitTo:10'>
+                    <p><strong>{{event.starttime | date: 'short'}}</strong></p>
+                    <p><strong><a href="{{event.eventlink}}">{{event.title}}</a></strong></p>
+                </div>
+            </div>
+        </div>
+    </div>            
 </div>
