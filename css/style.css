@@ -60,6 +60,7 @@ p {
   -webkit-text-stroke-color: black;
 }
 .intro {
+  padding: 2em 1em;
   background-color: #659572;
   text-align: center;
 }
@@ -72,17 +73,21 @@ p {
   padding: 2em 0;
 }
 .intro .info-button a {
+  background-color: black;
+  color: white;
   position: relative;
   font-family: 'Goudy Bookletter 1911', serif;
   text-transform: uppercase;
   padding: 1.2em 3.6em;
-  background-color: #efefef;
-  color: black;
   text-decoration: none;
   border-radius: 3px;
 }
 .intro .info-button a:hover {
-  background-color: #c9c9c9;
+  background-color: #404040;
+}
+.intro .twitter {
+  padding-top: 1em;
+  text-align: center;
 }
 .space {
   height: 1em;
@@ -91,14 +96,18 @@ p {
 .social {
   text-align: center;
 }
-.social h2 {
+.social h1 {
   color: white;
   font-family: 'Goudy Bookletter 1911', serif;
+  padding-bottom: 1em;
 }
 .social .calendar {
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
   background-color: #f2f3f4;
+  height: 600px;
+  overflow-y: scroll;
 }
 .social .calendar .panel-heading {
   font-family: 'Goudy Bookletter 1911', serif;
@@ -117,9 +126,6 @@ p {
 .social .calendar p {
   color: black;
   padding: .5em 0;
-}
-.social .twitter {
-  height: 50em;
 }
 .footer {
   border-top: 1px solid gray;
