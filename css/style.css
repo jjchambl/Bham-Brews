@@ -289,7 +289,6 @@ p {
 .trimTabTapRoomDiv {
   height: 17em;
   margin-top: 0.5em;
-  padding-left: 0;
 }
 #trimTabTapImg {
   width: 100%;
@@ -389,6 +388,7 @@ p {
   background-image: url("/Brewery-pics/goodPeopleCaroImg.jpg");
   background-position-x: 0%;
   background-position-y: 25%;
+  background-size: cover;
   height: 25em;
   margin-top: 0.5em;
   border-radius: 5px;
