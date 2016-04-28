@@ -27,23 +27,25 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8" id="goodPeopleMapContainer">
-                <div class="maps">
-                    <ng-map center="33.5069388,-86.812197" zoom="10">
-                        <marker position="33.5069388,-86.812197" title="Good People Brewery!"></marker>
-                        <directions
-                        draggable="true"
-                        panel="directions-panel"
-                        travel-mode="DRIVING"
-                        origin="current-location"
-                        destination="114 14th Street South Birmingham, AL 35233">
-                        </directions>
-                    </ng-map>
+    <div id="goodMapContent">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8" id="goodPeopleMapContainer">
+                    <div class="maps">
+                        <ng-map center="33.5069388,-86.812197" zoom="10">
+                            <marker position="33.5069388,-86.812197" title="Good People Brewery!"></marker>
+                            <directions
+                            draggable="true"
+                            panel="directions-panel"
+                            travel-mode="DRIVING"
+                            origin="current-location"
+                            destination="114 14th Street South Birmingham, AL 35233">
+                            </directions>
+                        </ng-map>
+                    </div>
                 </div>
+                <div class="col-md-4 mapContainer gpdp" id="directions-panel"></div>
             </div>
-            <div class="col-md-4 mapContainer gpdp" id="directions-panel"></div>
         </div>
     </div>
 </div>
