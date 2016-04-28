@@ -26,13 +26,12 @@ body {
   overflow: hidden;
   background-color: #659572;
 }
-.navbar {
+.navbar-inverse {
   text-transform: uppercase;
   font-family: 'Raleway';
 }
-.navbar a {
-  color: white;
-  text-decoration: none;
+.navbar-inverse .twitter-logo {
+  text-align: center;
 }
 p {
   padding: 2em 0;
@@ -46,7 +45,7 @@ p {
   padding-top: 0;
   margin-top: 0;
   background-image: url('/Bham-pics/Birmingham_Skyline_1.jpeg');
-  height: 35em;
+  height: 100vh;
   max-width: 100%;
   background-size: cover;
   background-position: center;
@@ -66,6 +65,44 @@ p {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+.bhamHeadImg .scroll {
+  padding-top: 25em;
+  position: relative;
+  -webkit-animation: fadein 5s ease-in;
+  animation: fadein 5s ease-in;
+  margin: 0;
+  vertical-align: middle;
+  font-family: 'Raleway';
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bhamHeadImg p {
+  padding: 0;
+  margin: 0;
+}
+.bhamHeadImg .glyphicon {
+  padding: 0;
+  margin: 0;
 }
 .intro {
   padding: 2em 1em;

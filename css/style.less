@@ -14,12 +14,11 @@ body {
     overflow: hidden;
     background-color: @green-background;
 }
-.navbar {
+.navbar-inverse {
     text-transform: uppercase;
     font-family: @content-font;
-    a {
-        color: white;
-        text-decoration: none;
+    .twitter-logo {
+        text-align: center;
     }
 }
 p {
@@ -34,7 +33,7 @@ p {
     padding-top: 0;
     margin-top: 0;
     background-image: url('/Bham-pics/Birmingham_Skyline_1.jpeg');
-    height: 35em;
+    height: 100vh;
     max-width: 100%;
     background-size:cover;
     background-position: center;
@@ -54,6 +53,37 @@ p {
         position: absolute;
         right: 0;
         bottom: 0;
+    }
+    .scroll {
+        padding-top: 25em;
+        position: relative;
+        text-align: center;
+        -webkit-animation: fadein 5s ease-in;
+        animation: fadein 5s ease-in;
+        margin: 0;
+        vertical-align: middle;
+        font-family: @content-font;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: transparent;
+        color: white;
+    }
+    @keyframes fadein {
+        from {opacity: 0; }
+        to {opacity: 1;}
+    }
+    @-webkit-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    p {
+        padding: 0;
+        margin: 0;
+    }
+    .glyphicon {
+        padding: 0;
+        margin: 0;
     }
 }
 .intro {
