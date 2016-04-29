@@ -285,10 +285,13 @@ p {
 }
 .avondaleBrewInfo {
   color: white;
-  padding: 1em;
 }
 .avondaleBrewInfo h2 {
   font-family: 'Goudy Bookletter 1911', serif;
+}
+.avondaleBrewInfo h2 p {
+  font-family: 'Raleway';
+  font-size: 1em;
 }
 .avondaleArt {
   background-image: url("/Brewery-pics/avondale.jpg");
