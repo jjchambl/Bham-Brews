@@ -487,3 +487,9 @@ p {
     margin: auto;
   }
 }
+.titles {
+  text-align: center;
+  color: #F9F7FA;
+  font-family: 'Goudy Bookletter 1911', serif;
+  text-decoration: uppercase;
+}
