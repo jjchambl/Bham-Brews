@@ -1,3 +1,4 @@
+<!--Top image-->
 <div class="bhamHeadImg" id="bhamHeadImg">
     <h1>Bham Brews</h1>
     <p class="caption"><small>Image credit: A. McAnally</small></p>
@@ -7,32 +8,13 @@
     </div>
 </div>
 
-<!--beer panels-->
-<!--<div class="container">
-    <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-3" ng-repeat='beer in beers | limitTo: 8'>
-            <div class="panel beer-panel">
-                <div class="head"><h3>{{beer.beer.beer_name}}</h3></div>
-                <hr>
-                <div class="row panel-body">
-                    <div class="col-xs-4"><img src="{{beer.beer.beer_label}}" alt="Beer Image"></div>
-                    <div class="col-xs-8"><p>Style: {{beer.beer.beer_style}}</p></div>
-                    <div class="col-xs-8"><p>abv: {{beer.beer.beer_abv}}</p></div>
-                    <div class="col-xs-12">
-                        <span><strong>Rating:</strong> <small>{{beer.beer.rating_score}}</small></span><span><strong>  Votes: </strong><small>{{beer.beer.rating_count}}</small></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>-->
-<!--End of beer panels-->
+<!--Intro content, twitter timeline-->
 <div class="intro">
     <div class="row">
         <div class="col-sm-6 col-sm-offset-1 col-lg-4 col-lg-offset-3">
             <p>Birmingham, Alabama, has a rich brewing history dating back to the late 19th century, but it wasn’t until 2008 that the state government fully embraced the economic possibilities that craft brewing allows. Now, 8 years later, Birmingham is home to 4 decorated craft breweries, each with its own story and culture. Bham Brews is proud to offer information on each of these businesses located in one convenient place. Whether you’re searching for products, or looking to see what events are being hosted on a given night, we’re confident you’ll find what you’re looking for here. Grab a cold pint and enjoy!  - Bham Brews Team</p>
             <div class="info-button">
-                <a href="" ng-click="getEvents()">See News and Events</a>
+                <a ng-click="goToCalendar()">See News and Events</a>
             </div>
         </div>
         <div class="col-sm-3 col-sm-offset-1">
@@ -45,10 +27,8 @@
 </div>
     
 <!--CAROUSEL-->
-<div id="brewCarousel" class="carousel slide jumbotron"> 
-    <!--Adjust the container class, look for others to make the image sizes consistent 
-    and not have the prev and next buttons be so big when it is contained also find more
-    caro images to make it bigger-->
+<div id="brewCarousel" class="carousel slide jumbotron">
+    <h1>The Breweries</h1>
     <div class="container">
         <ol class="carousel-indicators">
             <li class="active" data-target="#brewCarousel" data-slide-to="0"></li>
@@ -77,13 +57,13 @@
                 <a href="#trimtab">
                     <img src="Brewery-pics/trimTabCaroImg.jpg" alt="">
                     <div class="carousel-caption">
-                        <h2>TribTab Brewing Co.</h2>
+                        <h2>Trim Tab Brewing Co.</h2>
                     </div>
                 </a>
             </div>
             <div class="item">
                 <a href="#cahaba">
-                    <img src="Brewery-pics/cahabaBrewBeerImg.png" alt="">
+                    <img src="Brewery-pics/CahabaImgs/cahabaBrewSocialEvent.gif" alt="">
                     <div class="carousel-caption">
                         <h2>Cahaba Brewing Co.</h2>
                     </div>
@@ -101,27 +81,27 @@
 </div>
     <!--END OF CAROUSEL-->
     
+<!--Calendars-->
 <!--<div class="space"></div>-->
-<div class="social">
+<div id="calendar" class="social">
     <h1>What's Happening</h1>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel calendar">
-                    <div class="panel-heading">Calendar</div>
-                    <div class="col-sm-6">
-                            <h2>Good People Events</h2>
-                            <div class="panel-body" ng-repeat='event in goodEvents | limitTo:6'>
-                                <p><strong><a href="{{event.short_url}}">{{event.summary}}</a></strong></p>
-                            </div>
-                    </div>
-                    <div class="col-sm-6">
-                            <h2>Avondale Events</h2>
-                            <div class="panel-body" ng-repeat='event in avEvents | limitTo:6'>
-                                <p><strong>{{event.starttime | date: 'short'}}</strong></p>
-                                <p><strong><a href="{{event.eventlink}}">{{event.title}}</a></strong></p>
-                            </div>
-                    </div>    
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="panel calendar">
+                <h2>Good People Events</h2>
+                <div class="panel-body" ng-repeat='event in goodEvents | limitTo:10'>
+                    <p><strong><a href="{{event.short_url}}">{{event.summary}}</a></strong></p>
                 </div>
             </div>
-        </div>            
+        </div>
+        <div class="col-sm-6"> 
+            <div class="panel calendar">
+                <h2>Avondale Events</h2>
+                <div class="panel-body" ng-repeat='event in avEvents | limitTo:10'>
+                    <p><strong>{{event.starttime | date: 'short'}}</strong></p>
+                    <p><strong><a href="{{event.eventlink}}">{{event.title}}</a></strong></p>
+                </div>
+            </div>
+        </div>
+    </div>            
 </div>

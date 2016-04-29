@@ -37,7 +37,6 @@ p {
     max-width: 100%;
     background-size:cover;
     background-position: center;
-    // background-position-y: ;
     h1 {
         font-family: @title-font;
         text-transform: uppercase;
@@ -58,8 +57,8 @@ p {
         padding-top: 25em;
         position: relative;
         text-align: center;
-        -webkit-animation: fadein 5s ease-in;
-        animation: fadein 5s ease-in;
+        -webkit-animation: fadein 4s ease-in;
+        animation: fadein 4s ease-in;
         margin: 0;
         vertical-align: middle;
         font-family: @content-font;
@@ -90,7 +89,6 @@ p {
     padding: 2em 1em;
     background-color: @green-background;
     text-align: center;
-    // border-bottom: 2px solid gray;
     p {
         color: white;
         text-align: left;
@@ -109,6 +107,7 @@ p {
             border-radius: @button-border-radius;
             &:hover {
                 background-color: lighten(black, 25%);
+                cursor: pointer;
             }
         }
     }
@@ -123,7 +122,7 @@ p {
 }
 .social {
     text-align: center;
-    // background-color: #94d4af;
+    background-color: @green-background;
     h1 {
         color: white;
         font-family: @title-font;
@@ -176,11 +175,16 @@ p {
         height: 2em;
     }
 }
+
 .carousel {
+    h1 {
+        padding: 0 0 1em 0;
+        font-family: @title-font;
+    }
     text-align: center;    
     .carousel-inner {
         .item {
-            // height: 100%;
+            max-height: 35em;
             img {
                 width: 80%;
                 margin-right: auto;
@@ -189,6 +193,24 @@ p {
             h2 {
                 font-family: @title-font;
                 text-transform: uppercase;
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .carousel {
+        .carousel-inner {            
+            .item {
+                max-height: 25em;
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .carousel {
+        .carousel-inner {            
+            .item {
+                max-height: 20em;
             }
         }
     }
