@@ -39,6 +39,9 @@ p {
   font-size: 1.2em;
   color: #f1f1f1;
 }
+.content {
+  font-family: 'Raleway';
+}
 .bhamHeadImg {
   position: relative;
   text-align: center;
