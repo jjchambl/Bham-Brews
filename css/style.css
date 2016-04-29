@@ -39,6 +39,9 @@ p {
   font-size: 1.2em;
   color: #f1f1f1;
 }
+.content {
+  font-family: 'Raleway';
+}
 .bhamHeadImg {
   position: relative;
   text-align: center;
@@ -69,8 +72,8 @@ p {
 .bhamHeadImg .scroll {
   padding-top: 25em;
   position: relative;
-  -webkit-animation: fadein 5s ease-in;
-  animation: fadein 5s ease-in;
+  -webkit-animation: fadein 4s ease-in;
+  animation: fadein 4s ease-in;
   margin: 0;
   vertical-align: middle;
   font-family: 'Raleway';
@@ -129,6 +132,7 @@ p {
 }
 .intro .info-button a:hover {
   background-color: #404040;
+  cursor: pointer;
 }
 .intro .twitter {
   padding-top: 1em;
@@ -140,6 +144,7 @@ p {
 }
 .social {
   text-align: center;
+  background-color: #659572;
 }
 .social h1 {
   color: white;
@@ -199,6 +204,9 @@ p {
   padding: 0 0 1em 0;
   font-family: 'Goudy Bookletter 1911', serif;
 }
+.carousel .carousel-inner .item {
+  max-height: 35em;
+}
 .carousel .carousel-inner .item img {
   width: 80%;
   margin-right: auto;
@@ -207,6 +215,16 @@ p {
 .carousel .carousel-inner .item h2 {
   font-family: 'Goudy Bookletter 1911', serif;
   text-transform: uppercase;
+}
+@media screen and (max-width: 992px) {
+  .carousel .carousel-inner .item {
+    max-height: 25em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel .carousel-inner .item {
+    max-height: 20em;
+  }
 }
 .maps {
   height: auto;
@@ -220,6 +238,14 @@ p {
   background-color: #6A7073;
   border-radius: 5px;
   margin-top: 0.5em;
+}
+.trim-tab img {
+  height: 5em;
+  text-align: center;
+}
+.cahaba img {
+  height: 5em;
+  text-align: center;
 }
 .brewInfo {
   background-color: #6A7073;
@@ -270,7 +296,13 @@ p {
 }
 .avondaleBrewInfo {
   color: white;
-  padding: 1em;
+}
+.avondaleBrewInfo h2 {
+  font-family: 'Goudy Bookletter 1911', serif;
+}
+.avondaleBrewInfo h2 p {
+  font-family: 'Raleway';
+  font-size: 1em;
 }
 .avondaleArt {
   background-image: url("/Brewery-pics/avondale.jpg");
