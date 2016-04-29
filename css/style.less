@@ -428,7 +428,7 @@ p {
     background-size: cover;
     background-position-x: center;
     background-position-y: 8%;
-    height: 39em;
+    height: 25em;
     margin-top: 0.5em;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -442,11 +442,16 @@ p {
     max-width: 100%;
     margin-top: 8.5%;
 }
-
+// Controls Facebook Icon
 #facebookIcon {
     text-align: right;
-    padding-top: 16%;
+    padding-top: 1%;
     padding-right: 3%;
+}
+// Controls the brew panels
+.cahabaPanel {
+    max-height: 16.28em;
+    
 }
 // Controls the Map and Directions Panel
 #cahabaMapContent {
@@ -486,6 +491,14 @@ p {
 
 // Cahaba Mobile
 @media screen and (max-width: 768px) {
+    .cahaba {
+        margin-top: 0;
+    }
+    
+    #logoBackground {
+        background-position-x: 13%;
+    }
+    
     #cahabaImg {
         padding-left: 0%;
         padding-top: 5%;
@@ -496,6 +509,14 @@ p {
         width: 24.3em;
         height: 31.48em;
         margin-left: 0;
+    }
+    
+    #cahabaSocialContent {
+        padding-left: 0;
+    }
+// Controls all map and directions panel
+    #cahabaMapContent {
+        padding-left: 0;
     }
 //  Controls the map
     #cahabaMapContainer {
@@ -593,4 +614,11 @@ p {
         padding-top: 0.5em;
         margin: auto;
     }
+}
+
+.titles {
+    text-align: center;
+    color: #F9F7FA;
+    font-family: @title-font;
+    text-decoration: uppercase;
 }

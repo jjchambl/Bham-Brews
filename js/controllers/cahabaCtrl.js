@@ -18,7 +18,6 @@ function CahabaController($scope, $http, cahabaFactory, $location) {
             $("#nav-link").css("color", "white");
         }
     }
-    
     var getBrews = function() {
         cahabaFactory.getBrews()
         .success(function(data) {
