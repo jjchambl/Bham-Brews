@@ -69,8 +69,8 @@ p {
 .bhamHeadImg .scroll {
   padding-top: 25em;
   position: relative;
-  -webkit-animation: fadein 5s ease-in;
-  animation: fadein 5s ease-in;
+  -webkit-animation: fadein 4s ease-in;
+  animation: fadein 4s ease-in;
   margin: 0;
   vertical-align: middle;
   font-family: 'Raleway';
@@ -129,6 +129,7 @@ p {
 }
 .intro .info-button a:hover {
   background-color: #404040;
+  cursor: pointer;
 }
 .intro .twitter {
   padding-top: 1em;
@@ -140,6 +141,7 @@ p {
 }
 .social {
   text-align: center;
+  background-color: #659572;
 }
 .social h1 {
   color: white;

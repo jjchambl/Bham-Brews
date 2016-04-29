@@ -4,18 +4,20 @@ angular.module("brewApp")
 .controller("AvondaleCtrl", AvondaleController);
 
 // Listing the dependencies
-AvondaleController.$inject = ["$scope", "$http"];
+AvondaleController.$inject = ["$scope", "$http", "avondaleFactory"];
 
 // implementing the dependencies
-// function AvondaleController($scope, $http) {
-//     $scope.message = "This is Avondale.";
+function AvondaleController($scope, $http, avondaleFactory) {
     
-//     var getBrews = function() {
-//         $http.get('https://api.untappd.com/v4/brewery/info/12339/GET?client_id=DBC75E152A90C85FFFDD9562522B89649EAF6252&client_secret=778095373400201EB85CE2084B4829C6C454A7DB').success(function(data) {
-//             console.log(data.response.brewery.beer_list.items);
-//             var beerList = data.response.brewery.beer_list.items;
-//             $scope.beers = beerList;
-//         })
-//     }
-//     $scope.init = getBrews ();    
-// }
+    var getBrews = function() {
+        avondaleFactory.getBrews()
+        .success(function(data) {
+            console.log(data.response.brewery.beer_list.items);
+            var beerList = data.response.brewery.beer_list.items;
+            $scope.beers = beerList;
+        }, function(err) {
+            console.log(err);
+        });
+    }
+    // $scope.init = getBrews ();    
+}
