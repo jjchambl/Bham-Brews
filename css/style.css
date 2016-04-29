@@ -201,6 +201,9 @@ p {
   padding: 0 0 1em 0;
   font-family: 'Goudy Bookletter 1911', serif;
 }
+.carousel .carousel-inner .item {
+  max-height: 35em;
+}
 .carousel .carousel-inner .item img {
   width: 80%;
   margin-right: auto;
@@ -209,6 +212,16 @@ p {
 .carousel .carousel-inner .item h2 {
   font-family: 'Goudy Bookletter 1911', serif;
   text-transform: uppercase;
+}
+@media screen and (max-width: 992px) {
+  .carousel .carousel-inner .item {
+    max-height: 25em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel .carousel-inner .item {
+    max-height: 20em;
+  }
 }
 .maps {
   height: auto;

@@ -37,7 +37,6 @@ p {
     max-width: 100%;
     background-size:cover;
     background-position: center;
-    // background-position-y: ;
     h1 {
         font-family: @title-font;
         text-transform: uppercase;
@@ -176,6 +175,7 @@ p {
         height: 2em;
     }
 }
+
 .carousel {
     h1 {
         padding: 0 0 1em 0;
@@ -184,6 +184,7 @@ p {
     text-align: center;    
     .carousel-inner {
         .item {
+            max-height: 35em;
             img {
                 width: 80%;
                 margin-right: auto;
@@ -192,6 +193,24 @@ p {
             h2 {
                 font-family: @title-font;
                 text-transform: uppercase;
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .carousel {
+        .carousel-inner {            
+            .item {
+                max-height: 25em;
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .carousel {
+        .carousel-inner {            
+            .item {
+                max-height: 20em;
             }
         }
     }

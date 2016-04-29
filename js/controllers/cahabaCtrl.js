@@ -20,5 +20,5 @@ function CahabaController($scope, $http, cahabaFactory) {
             console.log(err);
         });
     }
-    // $scope.init = getBrews (); 
+    $scope.init = getBrews (); 
 }

@@ -19,5 +19,5 @@ function TrimTabController($scope, $http, trimFactory) {
             console.log(err);
         });
     }
-    // $scope.init = getBrews ();
+    $scope.init = getBrews ();
 }

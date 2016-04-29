@@ -19,5 +19,5 @@ function AvondaleController($scope, $http, avondaleFactory) {
             console.log(err);
         });
     }
-    // $scope.init = getBrews ();    
+    $scope.init = getBrews ();    
 }
