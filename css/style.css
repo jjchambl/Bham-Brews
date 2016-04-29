@@ -400,6 +400,9 @@ p {
   padding-top: 1%;
   padding-right: 3%;
 }
+.cahabaPanel {
+  max-height: 16.28em;
+}
 #cahabaMapContent {
   padding-left: 6.5%;
 }
