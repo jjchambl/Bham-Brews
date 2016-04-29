@@ -236,6 +236,14 @@ p {
   border-radius: 5px;
   margin-top: 0.5em;
 }
+.trim-tab img {
+  height: 5em;
+  text-align: center;
+}
+.cahaba img {
+  height: 5em;
+  text-align: center;
+}
 .brewInfo {
   background-color: #6A7073;
   color: #F9F7FA;
