@@ -39,6 +39,9 @@ p {
   font-size: 1.2em;
   color: #f1f1f1;
 }
+.content {
+  font-family: 'Raleway';
+}
 .bhamHeadImg {
   position: relative;
   text-align: center;
@@ -235,6 +238,14 @@ p {
   background-color: #6A7073;
   border-radius: 5px;
   margin-top: 0.5em;
+}
+.trim-tab img {
+  height: 5em;
+  text-align: center;
+}
+.cahaba img {
+  height: 5em;
+  text-align: center;
 }
 .brewInfo {
   background-color: #6A7073;
@@ -519,4 +530,10 @@ p {
     padding-top: 0.5em;
     margin: auto;
   }
+}
+.titles {
+  text-align: center;
+  color: #F9F7FA;
+  font-family: 'Goudy Bookletter 1911', serif;
+  text-decoration: uppercase;
 }

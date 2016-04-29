@@ -2,9 +2,9 @@ angular.module("brewApp")
 
 .controller("WelcomeCtrl", WelcomeController);
 
-WelcomeController.$inject = ["$scope", "$http", "$timeout", "$anchorScroll", "$location"];
+WelcomeController.$inject = ["$scope", "$http", "$timeout", "$anchorScroll", "$location", "welcomeFactory"];
 
-function WelcomeController($scope, $http, $timeout, $anchorScroll, $location) {
+function WelcomeController($scope, $http, $timeout, $anchorScroll, $location, welcomeFactory) {
     
     $timeout(function () {twttr.widgets.load();}, 500);
     
@@ -13,15 +13,14 @@ function WelcomeController($scope, $http, $timeout, $anchorScroll, $location) {
         $anchorScroll();
     }
     
-    $scope.beers = [];
-    
-    var config = {headers: {Filter: 9993770}};
-    
+    $scope.beers = [];    
     $scope.goodEvents = [];
     $scope.avEvents = [];
     
     var getAvondaleCalendar = function() {
-        $http.get('https://services.platypi.io/api/v1/events/', config).success(function(data) {
+        welcomeFactory.getAvondaleCalendar()
+        .success(function(data) {
+            console.log(data);
             var avEvents = data.data;
             $scope.avEvents = avEvents;
         }, function (err) {
@@ -30,7 +29,9 @@ function WelcomeController($scope, $http, $timeout, $anchorScroll, $location) {
     }
     
     var getGoodCalendar = function() {
-        $http.jsonp('http://api.tumblr.com/v2/blog/goodpeopleevents.tumblr.com/posts?callback=JSON_CALLBACK&api_key=I8vzOElWPL30QJgSCWH8aFTAySclmj4DRGu5JzavJOzWJm8FqM&tag=events&limit=10&_=1461703849658').success(function(data) {
+        welcomeFactory.getGoodCalendar()
+        .success(function(data) {
+            console.log(data);
             var goodEvents = data.response.posts;
             $scope.goodEvents = goodEvents;
         });

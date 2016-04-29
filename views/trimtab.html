@@ -10,9 +10,10 @@
         </div>
     </div>
     <div class="container">
+        <h1 class="titles">Brews</h1>
         <div class="row">
             <div class="col-sm-6 col-md-4 col-lg-3" ng-repeat='beer in beers | limitTo: 8'>
-                <div class="panel beer-panel">
+                <div class="panel trim-tab beer-panel">
                     <div class="head"><h3>{{beer.beer.beer_name}}</h3></div>
                     <hr>
                     <div class="row panel-body">
@@ -28,6 +29,7 @@
         </div>
     </div>
     <div class="container">
+        <h1 class="titles">Directions</h1>
         <div class="row">
             <div class="col-md-8" id="trimTabMapContainer">
                 <div class="maps">
