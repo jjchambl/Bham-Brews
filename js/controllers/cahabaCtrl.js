@@ -8,8 +8,6 @@ CahabaController.$inject = ["$scope", "$http", "cahabaFactory"];
 
 // implementing the dependencies
 function CahabaController($scope, $http, cahabaFactory) {
-    // $scope.googleMapsUrl="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm0HxIqsKb8xK49IOV8uGIUWcTbCeSs2E";
-    
     var getBrews = function() {
         cahabaFactory.getBrews()
         .success(function(data) {
