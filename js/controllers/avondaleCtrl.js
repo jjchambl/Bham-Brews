@@ -4,10 +4,19 @@ angular.module("brewApp")
 .controller("AvondaleCtrl", AvondaleController);
 
 // Listing the dependencies
-AvondaleController.$inject = ["$scope", "$http", "avondaleFactory"];
+AvondaleController.$inject = ["$scope", "$http", "avondaleFactory", "$location"];
 
 // implementing the dependencies
-function AvondaleController($scope, $http, avondaleFactory) {
+function AvondaleController($scope, $http, avondaleFactory, $location) {
+    
+    var setActive = function() {
+        if ($location.path() === '/trimtab' || '/goodppl' || '/cahaba' || '/avondale') {
+            $("#nav-links").css("color", "white");
+            $("#nav-link").css("color", "");
+        } else {
+            $("#nav-link").css("color", "white");
+        }
+    }
     
     var getBrews = function() {
         avondaleFactory.getBrews()
@@ -19,5 +28,6 @@ function AvondaleController($scope, $http, avondaleFactory) {
             console.log(err);
         });
     }
+    $scope.init = setActive();
     $scope.init = getBrews ();    
 }

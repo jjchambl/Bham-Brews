@@ -2,9 +2,18 @@ angular.module("brewApp")
 
 .controller("WelcomeCtrl", WelcomeController);
 
-WelcomeController.$inject = ["$scope", "$http", "$timeout", "$anchorScroll", "$location", "welcomeFactory"];
+WelcomeController.$inject = ["$scope", "$http", "$timeout", "$anchorScroll", "$location", "welcomeFactory", "$routeParams"];
 
-function WelcomeController($scope, $http, $timeout, $anchorScroll, $location, welcomeFactory) {
+function WelcomeController($scope, $http, $timeout, $anchorScroll, $location, welcomeFactory, $routeParams) {
+    
+    var setActive = function() {
+        if ($location.path() === '/') {
+            $("#nav-link").css("color", "white");
+            $("#nav-links").css("color", "");
+        } else {
+            $("#nav-link").css("color", "");
+        }
+    }
     
     $timeout(function () {twttr.widgets.load();}, 500);
     
@@ -12,6 +21,7 @@ function WelcomeController($scope, $http, $timeout, $anchorScroll, $location, we
         $location.hash('calendar');
         $anchorScroll();
     }
+
     
     $scope.beers = [];    
     $scope.goodEvents = [];
@@ -36,6 +46,8 @@ function WelcomeController($scope, $http, $timeout, $anchorScroll, $location, we
             $scope.goodEvents = goodEvents;
         });
     }
+    
+    $scope.init = setActive();
     $scope.init = getGoodCalendar();
     $scope.init = getAvondaleCalendar();
 }

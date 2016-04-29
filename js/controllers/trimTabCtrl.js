@@ -4,10 +4,19 @@ angular.module("brewApp")
 .controller("TrimTabCtrl", TrimTabController);
 
 // Listing the dependencies
-TrimTabController.$inject = ["$scope", "$http", "trimFactory"];
+TrimTabController.$inject = ["$scope", "$http", "trimFactory", "$location"];
 
 // implementing the dependencies
-function TrimTabController($scope, $http, trimFactory) {
+function TrimTabController($scope, $http, trimFactory, $location) {
+    
+    var setActive = function() {
+        if ($location.path() === '/trimtab' || '/goodppl' || '/cahaba' || '/avondale') {
+            $("#nav-links").css("color", "white");
+            $("#nav-link").css("color", "");
+        } else {
+            $("#nav-link").css("color", "white");
+        }
+    }
     
     var getBrews = function() {
         trimFactory.getBrews()
@@ -19,5 +28,6 @@ function TrimTabController($scope, $http, trimFactory) {
             console.log(err);
         });
     }
+    $scope.init = setActive();
     $scope.init = getBrews ();
 }
