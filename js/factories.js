@@ -1,5 +1,20 @@
 var factories = angular.module('brewApp.factories', []);
 
+factories.factory('welcomeFactory', ['$http', function ($http) {
+    var f = {};
+    
+    f.getGoodCalendar = function () {
+        return $http.jsonp('http://api.tumblr.com/v2/blog/goodpeopleevents.tumblr.com/posts?callback=JSON_CALLBACK&api_key=I8vzOElWPL30QJgSCWH8aFTAySclmj4DRGu5JzavJOzWJm8FqM&tag=events&limit=10&_=1461703849658');
+    }
+    
+    var config = {headers: {Filter: 9993770}};
+    f.getAvondaleCalendar = function() {
+        return $http.get('https://services.platypi.io/api/v1/events/', config);
+    }
+    
+    return f;
+}])
+
 factories.factory('goodFactory', ['$http', function($http) {
     var f = {};
     
