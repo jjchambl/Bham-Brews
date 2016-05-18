@@ -1,4 +1,4 @@
-var app = angular.module('brewApp', ['brewApp.factories', 'ngRoute', "ngMap"]);
+var app = angular.module('brewApp', ['brewApp.factories', 'ngRoute']);
 
 app.config(['$routeProvider', function($routeProvider) {
     $routeProvider
