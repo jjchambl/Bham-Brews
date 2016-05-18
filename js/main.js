@@ -22,4 +22,6 @@ app.config(['$routeProvider', function($routeProvider) {
         templateUrl: 'views/avondale.html',
         controller: 'AvondaleCtrl'
     });
+    
+ 
 }]);

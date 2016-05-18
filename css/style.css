@@ -24,17 +24,31 @@
   font-family: Norwester;
   src: url(../assets/fonts/norwester.otf);
 }
-body {
-  background-image: url('/assets/images/bham-brews-img-lg.png');
+#filter {
+  z-index: -1;
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 1s ease;
+}
+#filter img {
   background-repeat: no-repeat;
-  background-size: cover;
+  width: 110%;
+  height: 110%;
+  background-size: contain;
   background-position: 0% 0%;
   background-attachment: fixed;
+}
+#filter .darken {
+  opacity: 0.3;
 }
 .app {
   padding: 0;
   margin: 0;
   width: 100%;
+  z-index: 10;
   overflow: hidden;
 }
 .navbar-inverse {
@@ -75,7 +89,9 @@ p {
   -webkit-text-stroke-color: black;
 }
 .bhamHeadImg img {
-  margin-top: 15%;
+  margin-top: 10%;
+  width: auto;
+  height: auto;
 }
 .bhamHeadImg .caption {
   padding: 0 3px 0 0;
@@ -84,7 +100,7 @@ p {
   bottom: 0;
 }
 .bhamHeadImg .scroll {
-  padding-top: 5em;
+  padding-top: 2em;
   position: relative;
   -webkit-animation: fadein 4s ease-in;
   animation: fadein 4s ease-in;
@@ -159,7 +175,7 @@ p {
 }
 .social {
   text-align: center;
-  background-color: #659572;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .social h1 {
   color: white;
