@@ -22,6 +22,16 @@ app.config(['$routeProvider', function($routeProvider) {
         templateUrl: 'views/avondale.html',
         controller: 'AvondaleCtrl'
     });
-    
- 
 }]);
+
+$(window).on('scroll', function(){
+        var ypos = window.scrollY;
+        var trigger = 10;
+        
+        if (ypos > trigger) {
+            $('#filter').css('-webkit-filter', 'blur(3px) brightness(0.75)');
+            console.log('TRIGGERED!')
+        } else {
+            $('#filter').css('-webkit-filter', 'initial');
+        }
+    })

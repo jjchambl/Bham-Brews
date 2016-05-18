@@ -14,17 +14,7 @@ function WelcomeController($scope, $http, $timeout, $anchorScroll, $location, we
             $("#nav-link").css("color", "");
         }
     }
-    $(window).on('scroll', function(){
-        var ypos = window.scrollY;
-        var trigger = 10;
-        
-        if (ypos > trigger) {
-            $('#filter').css('-webkit-filter', 'blur(3px) brightness(0.75)');
-            console.log('TRIGGERED!')
-        } else {
-            $('#filter').css('-webkit-filter', 'initial');
-        }
-    })
+    
     
     $timeout(function () {twttr.widgets.load();}, 500);
     
