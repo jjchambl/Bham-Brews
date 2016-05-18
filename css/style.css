@@ -2,19 +2,27 @@
 .beer-panel {
   margin: 1em 0;
   text-align: center;
-  font-family: 'Raleway';
+  font-family: 'Quicksand', sans-serif;
 }
 .beer-panel .head {
   padding: 0;
   margin: 0;
 }
 .beer-panel h3 {
-  font-family: 'Goudy Bookletter 1911', serif;
+  font-family: 'Norwester', serif;
 }
 .beer-panel p {
   text-align: left;
   color: black;
   padding: 0;
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(../assets/fonts/Quicksand-Regular.otf);
+}
+@font-face {
+  font-family: Norwester;
+  src: url(../assets/fonts/norwester.otf);
 }
 body {
   background-color: #CCCECF;
@@ -28,19 +36,19 @@ body {
 }
 .navbar-inverse {
   text-transform: uppercase;
-  font-family: 'Raleway';
+  font-family: 'Quicksand', sans-serif;
 }
 .navbar-inverse .twitter-logo {
   text-align: center;
 }
 p {
   padding: 2em 0;
-  font-family: Raleway;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.2em;
   color: #f1f1f1;
 }
 .content {
-  font-family: 'Raleway';
+  font-family: 'Quicksand', sans-serif;
 }
 .bhamHeadImg {
   position: relative;
@@ -54,7 +62,7 @@ p {
   background-position: center;
 }
 .bhamHeadImg h1 {
-  font-family: 'Goudy Bookletter 1911', serif;
+  font-family: 'Norwester', serif;
   text-transform: uppercase;
   font-size: 6em;
   color: white;
@@ -76,7 +84,7 @@ p {
   animation: fadein 4s ease-in;
   margin: 0;
   vertical-align: middle;
-  font-family: 'Raleway';
+  font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -124,7 +132,7 @@ p {
   background-color: black;
   color: white;
   position: relative;
-  font-family: 'Goudy Bookletter 1911', serif;
+  font-family: 'Norwester', serif;
   text-transform: uppercase;
   padding: 1.2em 3.6em;
   text-decoration: none;
@@ -148,7 +156,7 @@ p {
 }
 .social h1 {
   color: white;
-  font-family: 'Goudy Bookletter 1911', serif;
+  font-family: 'Norwester', serif;
   padding-bottom: 1em;
 }
 .social .calendar {
@@ -171,7 +179,7 @@ p {
 }
 .social .calendar h2 {
   color: black;
-  font-family: 'Raleway';
+  font-family: 'Quicksand', sans-serif;
 }
 .social .calendar p {
   color: black;
@@ -202,7 +210,7 @@ p {
 }
 .carousel h1 {
   padding: 0 0 1em 0;
-  font-family: 'Goudy Bookletter 1911', serif;
+  font-family: 'Norwester', serif;
 }
 .carousel .carousel-inner .item {
   max-height: 35em;
@@ -213,7 +221,7 @@ p {
   margin-left: auto;
 }
 .carousel .carousel-inner .item h2 {
-  font-family: 'Goudy Bookletter 1911', serif;
+  font-family: 'Norwester', serif;
   text-transform: uppercase;
 }
 @media screen and (max-width: 992px) {
@@ -253,11 +261,11 @@ p {
   border-radius: 6px;
   margin-top: 0.5em;
   text-align: center;
-  font-family: 'Raleway';
+  font-family: 'Quicksand', sans-serif;
   font-weight: 400;
 }
 .contentTitles {
-  font-family: 'Goudy Bookletter 1911', serif;
+  font-family: 'Norwester', serif;
   font-weight: bold;
   font-style: italic;
   color: #EBF2EB;
@@ -298,10 +306,10 @@ p {
   color: white;
 }
 .avondaleBrewInfo h2 {
-  font-family: 'Goudy Bookletter 1911', serif;
+  font-family: 'Norwester', serif;
 }
 .avondaleBrewInfo h2 p {
-  font-family: 'Raleway';
+  font-family: 'Quicksand', sans-serif;
   font-size: 1em;
 }
 .avondaleArt {
@@ -537,6 +545,6 @@ p {
 .titles {
   text-align: center;
   color: #F9F7FA;
-  font-family: 'Goudy Bookletter 1911', serif;
+  font-family: 'Norwester', serif;
   text-decoration: uppercase;
 }
