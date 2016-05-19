@@ -15,6 +15,7 @@ function WelcomeController($scope, $http, $timeout, $anchorScroll, $location, we
         }
     }
     
+    
     $timeout(function () {twttr.widgets.load();}, 500);
     
     $scope.goToCalendar = function() {
