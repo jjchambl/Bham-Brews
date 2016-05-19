@@ -13,7 +13,7 @@
         <h1 class="titles">Brews</h1>
         <div class="row">
             <div class="col-sm-6 col-md-4 col-lg-3" ng-repeat='beer in beers | limitTo: 8'>
-                <div class="panel beer-panel">
+                <div class="panel beer-panel" data-toggle="modal" data-target="#beerModal">
                     <div class="head"><h3>{{beer.beer.beer_name}}</h3></div>
                     <hr>
                     <div class="row panel-body">
@@ -25,28 +25,25 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="goodMapContent">
-        <h1 class="titles">Directions</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8" id="goodPeopleMapContainer">
-                    <div class="maps">
-                        <ng-map center="33.5069388,-86.812197" zoom="10">
-                            <marker position="33.5069388,-86.812197" title="Good People Brewery!"></marker>
-                            <directions
-                            draggable="true"
-                            panel="directions-panel"
-                            travel-mode="DRIVING"
-                            origin="current-location"
-                            destination="114 14th Street South Birmingham, AL 35233">
-                            </directions>
-                        </ng-map>
+                <div class="modal fade" id="beerModal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">{{beer.beer.beer_name}}</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="{{beer.beer.beer_label}}" alt="Beer Image">
+                                <p>{{beer.beer.beer_style}}</p>
+                                <p>{{beer.beer.beer_abv}}</p>
+                                <p>{{beer.beer.beer_description}}</p>
+                            </div>
+                            <div class="modal-footer">
+                                <span><strong>Rating:</strong> <small>{{beer.beer.rating_score}}</small></span><span><strong>  Votes: </strong><small>{{beer.beer.rating_count}}</small></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 mapContainer gpdp" id="directions-panel"></div>
             </div>
         </div>
     </div>

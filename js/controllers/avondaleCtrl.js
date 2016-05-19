@@ -29,5 +29,5 @@ function AvondaleController($scope, $http, avondaleFactory, $location) {
         });
     }
     $scope.init = setActive();
-    $scope.init = getBrews ();    
+    $scope.init = getBrews();    
 }

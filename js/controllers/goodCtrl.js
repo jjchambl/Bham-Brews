@@ -34,5 +34,5 @@ function GoodPeopleController($scope, $http, goodFactory, $location) {
         });
     }
     $scope.init = setActive();
-    $scope.init = getBrews ();    
+    // $scope.init = getBrews ();    
 }
