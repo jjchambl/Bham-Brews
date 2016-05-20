@@ -30,7 +30,7 @@
     margin: 0;
     width: 100%;
     z-index:10;
-    overflow: hidden;;
+    overflow: hidden;
 }
 .navbar-inverse {
     text-transform: uppercase;
@@ -276,22 +276,6 @@ p {
 }
 
 // Global Content Styles
-.brewInfo {
-    background-color: #6A7073;
-    color: #F9F7FA;
-    border-radius: 6px;
-    margin-top: 0.5em;
-    text-align: center;
-    font-family: @content-font;
-    font-weight: 400;
-}
-
-.contentTitles {
-    font-family: @title-font;
-    font-weight: bold;
-    font-style: italic;
-    color: #EBF2EB;
-}
 // End of Global Content Styles
 
 // Avondale Brewery
@@ -556,8 +540,48 @@ p {
 
 
 //Good People
+.brewInfo {
+    background-color: #6A7073;
+    color: #F9F7FA;
+    border-radius: 6px;
+    // text-align: center;
+    font-family: @content-font;
+}
+
+.contentTitles {
+    font-family: @title-font;
+    font-weight: bold;
+    font-style: italic;
+    color: #EBF2EB;
+}
+
 .goodPeople {
-    margin-top: 3.5em;
+    margin: 0;
+    padding: 0;
+    .container {
+        margin-top: 20em;
+    }    
+    .good-info {
+        display: inline-block;
+    }
+    .goodPeopleTapRoomDiv {
+        border: 1px solid white;
+        height: 33em;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        #goodPeopleTapImg {
+            width: 100%;
+            width: auto;
+            border-radius: 5px;
+        }
+    }    
+    .good-brewInfo {
+        background-color: #6A7073;
+        color: #F9F7FA;
+        border-radius: 6px;
+        // text-align: center;
+        font-family: @content-font;
+    }
 }
 
 .goodPeopleImg {
@@ -577,20 +601,6 @@ p {
     text-align: left;
 }
 
-.goodPeopleTapRoomDiv {
-    height: 17em;
-    margin-top: 0.5em;
-    padding-left: 0;
-}
-
-#goodPeopleTapImg {
-    width: 100%;
-    border-radius: 5px;
-}
-
-#goodPeopleInfo {
-    padding-bottom: 1em;
-}
 
 #goodPeopleMapContainer {
     width: 47.75em;

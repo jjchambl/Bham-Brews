@@ -278,21 +278,6 @@ p {
   height: 5em;
   text-align: center;
 }
-.brewInfo {
-  background-color: #6A7073;
-  color: #F9F7FA;
-  border-radius: 6px;
-  margin-top: 0.5em;
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
-}
-.contentTitles {
-  font-family: 'Norwester', serif;
-  font-weight: bold;
-  font-style: italic;
-  color: #EBF2EB;
-}
 .avondale {
   margin-top: 2.5em;
 }
@@ -495,8 +480,44 @@ p {
     margin-top: 0.5em;
   }
 }
+.brewInfo {
+  background-color: #6A7073;
+  color: #F9F7FA;
+  border-radius: 6px;
+  font-family: 'Quicksand', sans-serif;
+}
+.contentTitles {
+  font-family: 'Norwester', serif;
+  font-weight: bold;
+  font-style: italic;
+  color: #EBF2EB;
+}
 .goodPeople {
-  margin-top: 3.5em;
+  margin: 0;
+  padding: 0;
+}
+.goodPeople .container {
+  margin-top: 20em;
+}
+.goodPeople .good-info {
+  display: inline-block;
+}
+.goodPeople .goodPeopleTapRoomDiv {
+  border: 1px solid white;
+  height: 33em;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+.goodPeople .goodPeopleTapRoomDiv #goodPeopleTapImg {
+  width: 100%;
+  width: auto;
+  border-radius: 5px;
+}
+.goodPeople .good-brewInfo {
+  background-color: #6A7073;
+  color: #F9F7FA;
+  border-radius: 6px;
+  font-family: 'Quicksand', sans-serif;
 }
 .goodPeopleImg {
   margin: 0.5em;
@@ -512,18 +533,6 @@ p {
   margin-top: 0.5em;
   border-radius: 5px;
   text-align: left;
-}
-.goodPeopleTapRoomDiv {
-  height: 17em;
-  margin-top: 0.5em;
-  padding-left: 0;
-}
-#goodPeopleTapImg {
-  width: 100%;
-  border-radius: 5px;
-}
-#goodPeopleInfo {
-  padding-bottom: 1em;
 }
 #goodPeopleMapContainer {
   width: 47.75em;
