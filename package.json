@@ -23,11 +23,11 @@
     "gulp-less": "^3.1.0"
   },
   "scripts": {
-    "full-command": "concurrently \"npm run watch\" \"npm run http-server -a localhost -p 3000\"",
+    "full-command": "echo \"Error: no full command exists\" && exit 1",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "less": "lessc app/css/style.less app/css/style.css",
+    "less": "echo \"Error: no less command specified\" && exit 1",
     "start": "concurrently \"npm run watch\" \"npm run server\"",
-    "watch": "",
-    "server": "./node_modules/.bin/http-server -a localhost -p 3000"
+    "watch": "echo \"Error: no watch command exists\" && exit 1",
+    "server": "echo \"Error: npm server command not configured\" && exit 1"
   }
 }
