@@ -1,13 +1,13 @@
 {
   "name": "depotucapstoneproject",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "description": "task runners for group project",
-  "main": "js/main.js",
+  "main": "app/js/main.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jjchambl/DepotU-Capstone-Project.git"
   },
-  "author": "Jacob, Banks, Will, and Thomas",
+  "author": "Bham Brews",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jjchambl/DepotU-Capstone-Project/issues"
@@ -17,16 +17,17 @@
     "less": "^2.6.1"
   },
   "devDependencies": {
+    "browser-sync": "^2.13.0",
     "concurrently": "^2.0.0",
-    "http-server": "^0.9.0",
-    "nodemon": "latest"
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.1.0"
   },
   "scripts": {
     "full-command": "concurrently \"npm run watch\" \"npm run http-server -a localhost -p 3000\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "less": "lessc css/style.less css/style.css",
+    "less": "lessc app/css/style.less app/css/style.css",
     "start": "concurrently \"npm run watch\" \"npm run server\"",
-    "watch": "nodemon -q -e less --exec npm run less",
+    "watch": "",
     "server": "./node_modules/.bin/http-server -a localhost -p 3000"
   }
 }
