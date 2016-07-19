@@ -12,9 +12,10 @@ gulp.task('browserSync', function() {
 
 gulp.task('watch', ['browserSync', 'less'], function() {
     gulp.watch('app/css/*.less', ['less']);
-    gulp.watch('app/js/**/*.js', browserSync);
-    gulp.watch('app/index.html', browserSync);
-    gulp.watch('app/views/**/*.html', browserSync);
+    gulp.watch('app/js/*.js', browserSync.reload({stream:true}));
+    gulp.watch('app/js/controllers/*.js', browserSync.reload({stream:true}));
+    gulp.watch('app/index.html', browserSync.reload({stream:true}));
+    gulp.watch('app/views/*.html', browserSync.reload({stream:true}));
 });
 
 gulp.task('hello', function() {
